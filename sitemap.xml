@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Plan du site softhomedz.com (FR + AR) — à soumettre dans Google Search Console -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===== PAGES FRANÇAISES ===== -->
+  <url>
+    <loc>https://softhomedz.com/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/gagner-argent-outils-ia-gratuits.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/gagner-argent-outils-ia-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/rebh-elmal-adawat-ia.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/ia-petits-commerces.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-petits-commerces.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-mahallat-tijaria.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/chatgpt-guide-debutant.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/chatgpt-guide-debutant.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/chatgpt-dalil-mobtadi.html"/>
+  </url>
+
+  <!-- ===== PAGES ARABES ===== -->
+  <url>
+    <loc>https://softhomedz.com/ar/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/rebh-elmal-adawat-ia.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/gagner-argent-outils-ia-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/rebh-elmal-adawat-ia.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/ia-mahallat-tijaria.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-petits-commerces.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-mahallat-tijaria.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/chatgpt-dalil-mobtadi.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/chatgpt-guide-debutant.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/chatgpt-dalil-mobtadi.html"/>
+  </url>
+
+  <!-- ===== NOUVEAUX GUIDES — FR ===== -->
+  <url>
+    <loc>https://softhomedz.com/articles/prompts-chatgpt-exemples.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/prompts-chatgpt-exemples.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/promptat-chatgpt.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/meilleurs-outils-ia-gratuits.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/meilleurs-outils-ia-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/afdal-adawat-ia-majania.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/creer-images-ia-gratuit.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/creer-images-ia-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/insha-suwar-bil-ia.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/articles/ia-pour-etudiants.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-pour-etudiants.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-lil-tullab.html"/>
+  </url>
+
+  <!-- ===== NOUVEAUX GUIDES — AR ===== -->
+  <url>
+    <loc>https://softhomedz.com/ar/articles/promptat-chatgpt.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/prompts-chatgpt-exemples.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/promptat-chatgpt.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/afdal-adawat-ia-majania.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/meilleurs-outils-ia-gratuits.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/afdal-adawat-ia-majania.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/insha-suwar-bil-ia.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/creer-images-ia-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/insha-suwar-bil-ia.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/ia-lil-tullab.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-pour-etudiants.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-lil-tullab.html"/>
+  </url>
+
+  <!-- ===== GUIDE INSTAGRAM (FR + AR) ===== -->
+  <url>
+    <loc>https://softhomedz.com/articles/ia-pour-instagram.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-pour-instagram.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-lil-instagram.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/ia-lil-instagram.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/ia-pour-instagram.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/ia-lil-instagram.html"/>
+  </url>
+
+  <!-- ===== GUIDE CV (FR + AR) ===== -->
+  <url>
+    <loc>https://softhomedz.com/articles/rediger-cv-avec-ia.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/rediger-cv-avec-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/sira-datia-bil-ia.html"/>
+  </url>
+  <url>
+    <loc>https://softhomedz.com/ar/articles/sira-datia-bil-ia.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://softhomedz.com/articles/rediger-cv-avec-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/articles/sira-datia-bil-ia.html"/>
+  </url>
+
+  <!-- ===== PAGE CONFIDENTIALITÉ ===== -->
+  <url>
+    <loc>https://softhomedz.com/confidentialite.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

@@ -1,0 +1,5 @@
+# robots.txt — softhomedz.com
+User-agent: *
+Allow: /
+
+Sitemap: https://softhomedz.com/sitemap.xml

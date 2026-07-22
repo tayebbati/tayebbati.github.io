@@ -1,0 +1,43 @@
+# En-têtes de sécurité appliqués par Netlify en production
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; object-src 'none'; base-uri 'self'
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# ============================================================
+#  CACHE — par défaut Netlify sert tout en max-age=0 (revalidation
+#  à chaque visite). Les règles ci-dessous évitent ces allers-retours.
+#
+#  ⚠️ Les fichiers n'ont PAS d'empreinte dans leur nom (style.css et
+#  non style.a3f9c1.css). Un "max-age=1 an, immutable" bloquerait donc
+#  toute mise à jour chez les visiteurs déjà venus. D'où des durées
+#  bornées + stale-while-revalidate : le navigateur affiche la version
+#  en cache immédiatement, et récupère la nouvelle en arrière-plan.
+#
+#  Le HTML n'est volontairement PAS mis en cache : il doit toujours
+#  refléter le dernier déploiement.
+# ============================================================
+
+# Illustrations et image de partage — changent très rarement
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+# Icônes — stables, mais on garde une porte de sortie à 7 jours
+/favicon.ico
+  Cache-Control: public, max-age=604800
+/favicon.svg
+  Cache-Control: public, max-age=604800
+/favicon-16x16.png
+  Cache-Control: public, max-age=604800
+/favicon-32x32.png
+  Cache-Control: public, max-age=604800
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
+
+# CSS et JS — retouchés plus souvent : cache court + rafraîchissement en fond
+/style.css
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
