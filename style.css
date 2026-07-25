@@ -3,3 +3,7 @@
 .btn-guide-ia-banner:hover{opacity:0.9}
 .btn-guide-ia-hero{display:inline-block;margin-left:16px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff !important;text-decoration:none;padding:14px 28px;border-radius:12px;font-weight:600;font-size:16px;box-shadow:0 10px 20px -5px rgba(124,58,237,0.4)}
 .btn-guide-ia-hero:hover{transform:translateY(-2px)}
+.btn-guide-ia-banner{display:inline-block;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff !important;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.95rem}
+.btn-guide-ia-banner:hover{opacity:0.9}
+.btn-guide-ia-hero{display:inline-block;margin-left:16px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff !important;text-decoration:none;padding:14px 28px;border-radius:12px;font-weight:600;font-size:16px;box-shadow:0 10px 20px -5px rgba(124,58,237,0.4)}
+.btn-guide-ia-hero:hover{transform:translateY(-2px)}
