@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Comparatif des meilleurs outils IA gratuits">
+  <defs><linearGradient id="b2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#221252"/><stop offset="1" stop-color="#0b0620"/>
+  </linearGradient></defs>
+  <rect width="800" height="500" fill="url(#b2)"/>
+  <ellipse cx="400" cy="462" rx="210" ry="14" fill="#000" opacity="0.35"/>
+  <text x="400" y="106" font-family="system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ece8fa">Outils IA gratuits</text>
+  <rect x="330" y="120" width="140" height="4" rx="2" fill="#8b5cf6"/>
+  
+  <rect x="118" y="160" width="128" height="200" rx="18" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <circle cx="182" cy="208" r="26" fill="#7c3aed" opacity="0.25"/>
+  <circle cx="182" cy="208" r="13" fill="#a78bfa"/>
+  <text x="182" y="264" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#ece8fa">ChatGPT</text>
+  <rect x="144" y="284" width="76" height="6" rx="3" fill="#312e81"/><rect x="144" y="302" width="58" height="6" rx="3" fill="#312e81"/>
+  <rect x="148" y="322" width="68" height="24" rx="12" fill="#1e7e34" opacity="0.22"/>
+  <text x="182" y="339" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#4ade80">GRATUIT</text>
+  <rect x="270" y="160" width="128" height="200" rx="18" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <circle cx="334" cy="208" r="26" fill="#7c3aed" opacity="0.25"/>
+  <circle cx="334" cy="208" r="13" fill="#a78bfa"/>
+  <text x="334" y="264" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#ece8fa">Le Chat</text>
+  <rect x="296" y="284" width="76" height="6" rx="3" fill="#312e81"/><rect x="296" y="302" width="58" height="6" rx="3" fill="#312e81"/>
+  <rect x="300" y="322" width="68" height="24" rx="12" fill="#1e7e34" opacity="0.22"/>
+  <text x="334" y="339" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#4ade80">GRATUIT</text>
+  <rect x="422" y="160" width="128" height="200" rx="18" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <circle cx="486" cy="208" r="26" fill="#7c3aed" opacity="0.25"/>
+  <circle cx="486" cy="208" r="13" fill="#a78bfa"/>
+  <text x="486" y="264" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#ece8fa">DeepL</text>
+  <rect x="448" y="284" width="76" height="6" rx="3" fill="#312e81"/><rect x="448" y="302" width="58" height="6" rx="3" fill="#312e81"/>
+  <rect x="452" y="322" width="68" height="24" rx="12" fill="#1e7e34" opacity="0.22"/>
+  <text x="486" y="339" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#4ade80">GRATUIT</text>
+  <rect x="574" y="160" width="128" height="200" rx="18" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <circle cx="638" cy="208" r="26" fill="#7c3aed" opacity="0.25"/>
+  <circle cx="638" cy="208" r="13" fill="#a78bfa"/>
+  <text x="638" y="264" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#ece8fa">Canva</text>
+  <rect x="600" y="284" width="76" height="6" rx="3" fill="#312e81"/><rect x="600" y="302" width="58" height="6" rx="3" fill="#312e81"/>
+  <rect x="604" y="322" width="68" height="24" rx="12" fill="#1e7e34" opacity="0.22"/>
+  <text x="638" y="339" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#4ade80">GRATUIT</text>
+  <g fill="#a78bfa">
+    <path d="M96 120 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 z" opacity="0.85"/>
+    <path d="M712 128 l8 19 19 8 -19 8 -8 19 -8 -19 -19 -8 19 -8 z" opacity="0.7"/>
+    <path d="M714 372 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 z" opacity="0.6"/>
+    <path d="M92 386 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.5"/>
+  </g>
+</svg>

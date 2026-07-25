@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Publication Instagram créée avec l'aide de l'intelligence artificielle">
+  <defs>
+    <linearGradient id="bgI" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#221252"/><stop offset="1" stop-color="#0b0620"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgI)"/>
+  <ellipse cx="400" cy="466" rx="150" ry="14" fill="#000" opacity="0.35"/>
+
+  <!-- telephone -->
+  <rect x="296" y="34" width="208" height="424" rx="30" fill="#2e1b63"/>
+  <rect x="308" y="62" width="184" height="368" rx="16" fill="#150c33"/>
+  <circle cx="400" cy="49" r="5" fill="#6d28d9"/>
+
+  <!-- entete du post -->
+  <circle cx="332" cy="90" r="12" fill="#a78bfa"/>
+  <rect x="352" y="84" width="62" height="7" rx="3.5" fill="#4c1d95"/>
+  <rect x="352" y="96" width="40" height="5" rx="2.5" fill="#312e81"/>
+
+  <!-- photo du post -->
+  <rect x="316" y="112" width="168" height="150" rx="10" fill="url(#photo)"/>
+  <circle cx="356" cy="150" r="14" fill="#c4b5fd" opacity="0.9"/>
+  <path d="M316 262 l44 -50 34 38 26 -26 64 52 z" fill="#a78bfa" opacity="0.85"/>
+
+  <!-- icones -->
+  <path d="M326 282 c-6 -7 2 -15 8 -9 6 -6 14 2 8 9 l-8 8 z" fill="#f472b6"/>
+  <circle cx="356" cy="284" r="7" fill="none" stroke="#8b7bb8" stroke-width="2"/>
+  <path d="M380 278 l12 6 -12 6 z" fill="none" stroke="#8b7bb8" stroke-width="2"/>
+
+  <!-- legende generee -->
+  <rect x="316" y="302" width="168" height="66" rx="10" fill="#1e1145" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="328" y="320" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#a78bfa">LEGENDE — IA</text>
+  <rect x="328" y="330" width="140" height="6" rx="3" fill="#4c1d95"/>
+  <rect x="328" y="342" width="116" height="6" rx="3" fill="#4c1d95"/>
+  <rect x="328" y="354" width="74" height="6" rx="3" fill="#7c3aed"/>
+
+  <!-- hashtags -->
+  <g>
+    <rect x="316" y="380" width="52" height="18" rx="9" fill="#7c3aed" opacity="0.3"/>
+    <text x="342" y="393" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#c4b5fd">#alger</text>
+    <rect x="374" y="380" width="46" height="18" rx="9" fill="#7c3aed" opacity="0.3"/>
+    <text x="397" y="393" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#c4b5fd">#IA</text>
+    <rect x="426" y="380" width="58" height="18" rx="9" fill="#7c3aed" opacity="0.3"/>
+    <text x="455" y="393" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#c4b5fd">#commerce</text>
+  </g>
+
+  <!-- prompt entrant a gauche -->
+  <rect x="52" y="150" width="212" height="42" rx="21" fill="#1e1145" stroke="#6d28d9" stroke-width="2"/>
+  <text x="72" y="176" font-family="system-ui, sans-serif" font-size="13" fill="#b6aed6">« 5 posts pour ma boutique »</text>
+  <path d="M268 171 h20 M282 163 l8 8 -8 8" stroke="#a78bfa" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- etoiles -->
+  <g fill="#a78bfa">
+    <path d="M150 260 l11 26 26 11 -26 11 -11 26 -11 -26 -26 -11 26 -11 z" opacity="0.9"/>
+    <path d="M600 130 l9 21 21 9 -21 9 -9 21 -9 -21 -21 -9 21 -9 z" opacity="0.75"/>
+    <path d="M624 330 l7 16 16 7 -16 7 -7 16 -7 -16 -16 -7 16 -7 z" opacity="0.6"/>
+    <path d="M132 372 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.5"/>
+  </g>
+</svg>

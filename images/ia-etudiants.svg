@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Étudiant utilisant l'intelligence artificielle pour réviser et résumer ses cours">
+  <defs><linearGradient id="b4" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#221252"/><stop offset="1" stop-color="#0b0620"/>
+  </linearGradient></defs>
+  <rect width="800" height="500" fill="url(#b4)"/>
+  <ellipse cx="400" cy="452" rx="200" ry="16" fill="#000" opacity="0.35"/>
+  <!-- ordinateur -->
+  <rect x="248" y="150" width="304" height="204" rx="14" fill="#2e1b63"/>
+  <rect x="262" y="164" width="276" height="176" rx="8" fill="#150c33"/>
+  <path d="M214 354 h372 l-22 30 h-328 z" fill="#4c1d95"/>
+  <!-- contenu ecran : cours -> resume -->
+  <rect x="280" y="182" width="106" height="140" rx="8" fill="#1e1145" stroke="#4c1d95" stroke-width="1.5"/>
+  <rect x="292" y="196" width="82" height="6" rx="3" fill="#312e81"/><rect x="292" y="213" width="68" height="6" rx="3" fill="#312e81"/><rect x="292" y="230" width="54" height="6" rx="3" fill="#312e81"/><rect x="292" y="247" width="82" height="6" rx="3" fill="#312e81"/><rect x="292" y="264" width="68" height="6" rx="3" fill="#312e81"/><rect x="292" y="281" width="54" height="6" rx="3" fill="#312e81"/><rect x="292" y="298" width="82" height="6" rx="3" fill="#312e81"/>
+  <path d="M400 250 h32 M422 240 l12 10 -12 10" stroke="#a78bfa" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="448" y="196" width="76" height="112" rx="8" fill="#1e1145" stroke="#6d28d9" stroke-width="1.5"/>
+  
+  <circle cx="462" cy="218" r="4" fill="#a78bfa"/>
+  <rect x="474" y="214" width="40" height="6" rx="3" fill="#7c3aed"/>
+  <circle cx="462" cy="248" r="4" fill="#a78bfa"/>
+  <rect x="474" y="244" width="34" height="6" rx="3" fill="#7c3aed"/>
+  <circle cx="462" cy="278" r="4" fill="#a78bfa"/>
+  <rect x="474" y="274" width="28" height="6" rx="3" fill="#7c3aed"/>
+  <text x="486" y="296" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#4ade80">résumé</text>
+  <!-- chapeau de diplome -->
+  <g transform="translate(628,150)">
+    <path d="M0 30 l58 -26 58 26 -58 26 z" fill="#a78bfa"/>
+    <path d="M20 40 v26 c0 12 76 12 76 0 v-26 l-38 17 z" fill="#7c3aed"/>
+    <path d="M112 32 v34" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="112" cy="70" r="6" fill="#c4b5fd"/>
+  </g>
+  <!-- livres -->
+  <g transform="translate(112,300)">
+    <rect x="0" y="30" width="96" height="16" rx="4" fill="#6d28d9"/>
+    <rect x="6" y="14" width="84" height="16" rx="4" fill="#7c3aed"/>
+    <rect x="12" y="-2" width="72" height="16" rx="4" fill="#a78bfa"/>
+  </g>
+  <g fill="#a78bfa">
+    <path d="M96 120 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 z" opacity="0.85"/>
+    <path d="M712 128 l8 19 19 8 -19 8 -8 19 -8 -19 -19 -8 19 -8 z" opacity="0.7"/>
+    <path d="M714 372 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 z" opacity="0.6"/>
+    <path d="M92 386 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.5"/>
+  </g>
+</svg>

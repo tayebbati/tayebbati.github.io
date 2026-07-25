@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Génération d'images par intelligence artificielle à partir d'une phrase">
+  <defs><linearGradient id="b3" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#221252"/><stop offset="1" stop-color="#0b0620"/>
+  </linearGradient></defs>
+  <rect width="800" height="500" fill="url(#b3)"/>
+  <ellipse cx="400" cy="462" rx="190" ry="14" fill="#000" opacity="0.35"/>
+  <rect x="150" y="112" width="330" height="46" rx="23" fill="#1e1145" stroke="#6d28d9" stroke-width="2"/>
+  <text x="176" y="141" font-family="system-ui, sans-serif" font-size="15" fill="#b6aed6">« un chat astronaute, style aquarelle »</text>
+  <path d="M496 135 h44 M528 121 l14 14 -14 14" stroke="#a78bfa" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <rect x="252" y="196" width="296" height="216" rx="18" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <rect x="268" y="212" width="264" height="184" rx="10" fill="#2e1b63"/>
+  <circle cx="330" cy="262" r="22" fill="#a78bfa" opacity="0.9"/>
+  <path d="M268 372 l70 -78 56 62 40 -40 98 80 z" fill="#7c3aed"/>
+  <path d="M268 372 l70 -78 56 62 -34 16 z" fill="#6d28d9" opacity="0.8"/>
+  <g fill="#c4b5fd">
+    <path d="M576 216 l9 22 22 9 -22 9 -9 22 -9 -22 -22 -9 22 -9 z"/>
+    <path d="M212 236 l7 17 17 7 -17 7 -7 17 -7 -17 -17 -7 17 -7 z" opacity="0.8"/>
+    <path d="M588 350 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.7"/>
+  </g>
+  <g fill="#a78bfa">
+    <path d="M96 120 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 z" opacity="0.85"/>
+    <path d="M712 128 l8 19 19 8 -19 8 -8 19 -8 -19 -19 -8 19 -8 z" opacity="0.7"/>
+    <path d="M714 372 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 z" opacity="0.6"/>
+    <path d="M92 386 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 448">
+  <defs>
+    <linearGradient id="headm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <!-- antenne -->
+  <circle cx="256" cy="48" r="24" fill="#c4b5fd"/>
+  <rect x="247" y="64" width="18" height="48" rx="9" fill="#8b5cf6"/>
+  <!-- oreilles -->
+  <rect x="62" y="196" width="34" height="88" rx="17" fill="#7c3aed"/>
+  <rect x="416" y="196" width="34" height="88" rx="17" fill="#7c3aed"/>
+  <!-- tete -->
+  <rect x="96" y="104" width="320" height="272" rx="76" fill="url(#headm)"/>
+  <!-- ecran / visage -->
+  <rect x="136" y="148" width="240" height="184" rx="48" fill="#0b0620"/>
+  <!-- yeux -->
+  <circle cx="204" cy="228" r="26" fill="#ffffff"/>
+  <circle cx="308" cy="228" r="26" fill="#ffffff"/>
+  <circle cx="204" cy="228" r="11" fill="#6d28d9"/>
+  <circle cx="308" cy="228" r="11" fill="#6d28d9"/>
+  <!-- sourire -->
+  <path d="M 212 288 Q 256 318 300 288" stroke="#a78bfa" stroke-width="14" stroke-linecap="round" fill="none"/>
+</svg>

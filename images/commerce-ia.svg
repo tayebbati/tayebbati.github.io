@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Boutique de petit commerce connectée à l'intelligence artificielle">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c0f47"/><stop offset="1" stop-color="#0b0620"/>
+    </linearGradient>
+    <linearGradient id="awn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <ellipse cx="400" cy="450" rx="260" ry="20" fill="#000" opacity="0.35"/>
+  <!-- boutique -->
+  <rect x="220" y="220" width="360" height="220" rx="8" fill="#2e1b63"/>
+  <rect x="250" y="280" width="120" height="160" rx="6" fill="#4c1d95"/>
+  <rect x="255" y="285" width="110" height="150" rx="4" fill="#1e1145"/>
+  <rect x="410" y="280" width="140" height="110" rx="6" fill="#c4b5fd"/>
+  <rect x="418" y="288" width="124" height="94" rx="4" fill="#ede9fe"/>
+  <!-- auvent -->
+  <g>
+    <rect x="200" y="185" width="400" height="20" fill="#5b21b6"/>
+    <g fill="url(#awn)">
+      <path d="M200 205 h80 v30 a40 30 0 0 1 -80 0 z"/>
+      <path d="M360 205 h80 v30 a40 30 0 0 1 -80 0 z"/>
+      <path d="M520 205 h80 v30 a40 30 0 0 1 -80 0 z"/>
+    </g>
+    <g fill="#c4b5fd">
+      <path d="M280 205 h80 v30 a40 30 0 0 1 -80 0 z"/>
+      <path d="M440 205 h80 v30 a40 30 0 0 1 -80 0 z"/>
+    </g>
+  </g>
+  <!-- enseigne -->
+  <rect x="300" y="130" width="200" height="44" rx="10" fill="#7c3aed"/>
+  <text x="400" y="160" font-family="system-ui, sans-serif" font-size="26" text-anchor="middle" fill="#fff" font-weight="700">SHOP</text>
+  <!-- bulle IA -->
+  <g>
+    <circle cx="620" cy="150" r="52" fill="#a78bfa"/>
+    <path d="M600 195 l-10 28 32 -18 z" fill="#a78bfa"/>
+    <text x="620" y="164" font-family="system-ui, sans-serif" font-size="34" text-anchor="middle" fill="#2e1065" font-weight="800">IA</text>
+  </g>
+  <g stroke="#8b5cf6" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M568 185 Q510 220 480 240" stroke-dasharray="7 7"/>
+  </g>
+</svg>

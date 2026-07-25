@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="CV amélioré avec l'aide de l'intelligence artificielle">
+  <defs>
+    <linearGradient id="bgCV" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#221252"/><stop offset="1" stop-color="#0b0620"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgCV)"/>
+  <ellipse cx="400" cy="465" rx="190" ry="14" fill="#000" opacity="0.35"/>
+
+  <!-- CV feuille -->
+  <rect x="270" y="52" width="260" height="380" rx="14" fill="#150c33" stroke="#4c1d95" stroke-width="2"/>
+  <!-- photo + entete -->
+  <circle cx="322" cy="106" r="26" fill="#7c3aed" opacity="0.35"/>
+  <circle cx="322" cy="98" r="10" fill="#a78bfa"/>
+  <path d="M304 122 a18 12 0 0 1 36 0 z" fill="#a78bfa"/>
+  <rect x="362" y="88" width="130" height="10" rx="5" fill="#a78bfa"/>
+  <rect x="362" y="106" width="92" height="7" rx="3.5" fill="#4c1d95"/>
+  <!-- sections -->
+  <rect x="296" y="152" width="82" height="8" rx="4" fill="#7c3aed"/>
+  <rect x="296" y="168" width="208" height="6" rx="3" fill="#312e81"/><rect x="296" y="183" width="178" height="6" rx="3" fill="#312e81"/><rect x="296" y="198" width="148" height="6" rx="3" fill="#312e81"/>
+  <rect x="296" y="232" width="104" height="8" rx="4" fill="#7c3aed"/>
+  <rect x="296" y="248" width="196" height="6" rx="3" fill="#312e81"/><rect x="296" y="263" width="172" height="6" rx="3" fill="#312e81"/><rect x="296" y="278" width="148" height="6" rx="3" fill="#312e81"/>
+  <!-- competences (barres) -->
+  <rect x="296" y="312" width="96" height="8" rx="4" fill="#7c3aed"/>
+  
+  <rect x="296" y="330" width="208" height="8" rx="4" fill="#1e1145"/>
+  <rect x="296" y="330" width="170" height="8" rx="4" fill="#8b5cf6"/>
+  <rect x="296" y="350" width="208" height="8" rx="4" fill="#1e1145"/>
+  <rect x="296" y="350" width="130" height="8" rx="4" fill="#8b5cf6"/>
+  <rect x="296" y="370" width="208" height="8" rx="4" fill="#1e1145"/>
+  <rect x="296" y="370" width="90" height="8" rx="4" fill="#8b5cf6"/>
+  <!-- coche validation -->
+  <circle cx="506" cy="410" r="24" fill="#1e7e34" opacity="0.9"/>
+  <path d="M495 410 l8 8 15 -16" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- bulle IA a gauche -->
+  <rect x="64" y="150" width="176" height="118" rx="16" fill="#1e1145" stroke="#6d28d9" stroke-width="2"/>
+  <path d="M240 200 l26 12 -26 12 z" fill="#1e1145" stroke="#6d28d9" stroke-width="2"/>
+  <circle cx="100" cy="182" r="14" fill="#7c3aed"/>
+  <circle cx="95" cy="180" r="2.6" fill="#fff"/><circle cx="105" cy="180" r="2.6" fill="#fff"/>
+  <path d="M95 187 q5 4 10 0" stroke="#c4b5fd" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="124" y="180" font-family="system-ui, sans-serif" font-size="12.5" fill="#b6aed6">« Reformule cette</text>
+  <text x="124" y="196" font-family="system-ui, sans-serif" font-size="12.5" fill="#b6aed6">expérience en</text>
+  <text x="124" y="212" font-family="system-ui, sans-serif" font-size="12.5" fill="#b6aed6">résultats concrets »</text>
+  <rect x="86" y="228" width="132" height="6" rx="3" fill="#4c1d95"/><rect x="86" y="242" width="96" height="6" rx="3" fill="#4c1d95"/>
+
+  <!-- loupe recruteur a droite -->
+  <g transform="translate(596,180)">
+    <circle cx="40" cy="40" r="34" fill="none" stroke="#a78bfa" stroke-width="7"/>
+    <path d="M64 66 l30 30" stroke="#a78bfa" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="24" fill="#7c3aed" opacity="0.18"/>
+  </g>
+
+  <g fill="#a78bfa">
+    <path d="M126 66 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 z" opacity="0.85"/>
+    <path d="M668 92 l8 19 19 8 -19 8 -8 19 -8 -19 -19 -8 19 -8 z" opacity="0.7"/>
+    <path d="M672 372 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 z" opacity="0.6"/>
+    <path d="M108 388 l6 14 14 6 -14 6 -6 14 -6 -14 -14 -6 14 -6 z" opacity="0.5"/>
+  </g>
+</svg>
