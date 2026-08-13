@@ -1,235 +1,864 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- ===== BASE TECHNIQUE ===== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ===== FAVICON ===== -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Google Search Console : 2e méthode de validation (la 1re est l'enregistrement DNS TXT) -->
-  <meta name="google-site-verification" content="7ucEFiwj-k3qMWLTwqrlcaJf5t6eIq1qHQh6Vf9A56g">
-
-  <!-- ===== SEO ===== -->
-  <title>Outils IA gratuits & Productivité — Guides en français | SoftHome DZ</title>
-  <meta name="description" content="Tutoriels IA en français simple : gagner de l'argent en ligne avec les outils IA gratuits, ChatGPT, productivité pour freelances et petits commerces. Guides pas à pas.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://softhomedz.com/">
-
-  <!-- ===== HREFLANG (versions linguistiques FR/AR) ===== -->
-  <link rel="alternate" hreflang="fr" href="https://softhomedz.com/">
-  <link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/">
-  <link rel="alternate" hreflang="x-default" href="https://softhomedz.com/">
-
-  <!-- ===== OPEN GRAPH (partage réseaux sociaux) ===== -->
-  <meta property="og:type" content="website">
+  <title>SoftHome DZ — Outils IA gratuits &amp; Productivité en français</title>
+  <meta name="description" content="Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces. Sans jargon, sans coder.">
   <meta property="og:title" content="SoftHome DZ — Outils IA gratuits & Productivité en français">
-  <meta property="og:description" content="Guides pratiques en français : gagner de l'argent avec les outils IA gratuits, ChatGPT pour votre métier, productivité freelance.">
-  <!-- Image de partage sociale 1200x630 (Open Graph / Twitter) -->
-  <meta property="og:image" content="https://softhomedz.com/images/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="SoftHome DZ — Outils IA gratuits et Productivité en français">
-  <meta property="og:url" content="https://softhomedz.com/">
+  <meta property="og:description" content="Guides IA en français — 100% pratique. Maîtrisez les outils IA gratuits et gagnez du temps.">
+  <meta property="og:image" content="images/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="SoftHome DZ">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://softhomedz.com/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050a14">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- ===== DONNÉES STRUCTURÉES JSON-LD ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "SoftHome DZ",
-    "url": "https://softhomedz.com/",
-    "description": "Guides en français sur les outils IA gratuits et la productivité : gagner de l'argent en ligne, IA pour freelances et petits commerces.",
-    "inLanguage": "fr",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SoftHome DZ",
-      "url": "https://softhomedz.com/",
-      "sameAs": ["https://www.facebook.com/softhomedz", "https://www.instagram.com/1001softhomedz"]
+  <!-- Polices Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══════════════════════════════════════════════
+       RESET & BASE
+       ═══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --brand-200: #a5f3fc;
+      --brand-300: #67e8f9;
+      --brand-400: #22d3ee;
+      --brand-500: #06b6d4;
+      --brand-600: #0891b2;
+      --brand-700: #0e7490;
+      --accent-400: #34d399;
+      --accent-500: #10b981;
+      --surface: #050a14;
+      --surface-light: #0a1322;
+      --surface-card: #0e1b30;
     }
-  }
-  </script>
 
-  <!-- Preload de l'image LCP (hero) : le navigateur la récupère au plus tôt -->
-  <link rel="preload" as="image" href="images/hero-ia.svg" fetchpriority="high">
-  <link rel="stylesheet" href="style.css">
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background-color: var(--surface);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(34,211,238,0.07), transparent),
+        radial-gradient(ellipse 60% 40% at 95% 35%, rgba(52,211,153,0.05), transparent);
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
 
-  <!-- ===== Google Analytics 4 (G-21029T3HX9) ===== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-21029T3HX9"></script>
-  <script src="/js/analytics.js"></script>
+    ::selection { background: var(--brand-400); color: var(--surface); }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #050a14; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #0e7490, #155e75); border-radius: 8px; border: 2px solid #050a14; }
+    ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #06b6d4, #0e7490); }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
+
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+
+    /* ═══════════════════════════════════════════════
+       UTILITAIRES
+       ═══════════════════════════════════════════════ */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .aurora-gradient { background-image: linear-gradient(135deg, #34d399 0%, #06b6d4 55%, #22d3ee 100%); }
+
+    .aurora-text {
+      background-image: linear-gradient(120deg, #6ee7b7 0%, #22d3ee 45%, #67e8f9 80%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+    }
+
+    .glass {
+      background: rgba(10,19,34,0.72);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(103,232,249,0.08);
+    }
+
+    .glass-light {
+      background: rgba(103,232,249,0.05);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(103,232,249,0.12);
+    }
+
+    .gradient-border { position: relative; }
+    .gradient-border::before {
+      content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+      background: linear-gradient(135deg, rgba(34,211,238,0.4), rgba(52,211,153,0.15), rgba(34,211,238,0.08));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+    }
+
+    .btn-shine { position: relative; overflow: hidden; }
+    .btn-shine::after {
+      content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+      transform: skewX(-20deg); animation: shine 3.5s infinite; pointer-events: none;
+    }
+
+    .card-hover { transition: transform 0.45s cubic-bezier(0.4,0,0.2,1), box-shadow 0.45s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(6,182,212,0.16); }
+
+    /* ═══════════════════════════════════════════════
+       ANIMATIONS
+       ═══════════════════════════════════════════════ */
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
+    @keyframes shine { 0%{left:-75%} 60%,100%{left:125%} }
+    @keyframes fadeUp { to{opacity:1;transform:translateY(0)} }
+    @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes typingBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-6px);opacity:1} }
+
+    .fade-up { opacity: 0; transform: translateY(30px); animation: fadeUp 0.8s ease forwards; }
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .stagger-5 { animation-delay: 0.5s; }
+
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-float-delayed { animation: float 7s ease-in-out infinite 2.5s; }
+
+    /* ═══════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════ */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      padding: 1.25rem 0; transition: all 0.5s;
+    }
+    .site-header.scrolled { padding: 0.75rem 0; background: rgba(10,19,34,0.72); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(103,232,249,0.08); box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+
+    .logo-link { display: flex; align-items: center; gap: 0.75rem; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 12px; transition: transform 0.3s; }
+    .logo-link:hover .logo-icon { transform: scale(1.1) rotate(3deg); }
+    .logo-text { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+    .logo-dz { margin-left: 0.4rem; font-size: 0.875rem; font-weight: 600; color: var(--brand-300); background: rgba(6,182,212,0.1); padding: 0.15rem 0.4rem; border-radius: 0.375rem; border: 1px solid rgba(34,211,238,0.2); }
+
+    .desktop-nav { display: flex; align-items: center; gap: 0.25rem; }
+    .nav-link { position: relative; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; color: #94a3b8; border-radius: 0.5rem; transition: all 0.3s; }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.05); }
+    .nav-link::after { content: ""; position: absolute; left: 1rem; right: 1rem; bottom: -2px; height: 1px; background: linear-gradient(90deg, var(--accent-400), var(--brand-400)); transform: scaleX(0); transition: transform 0.3s; }
+    .nav-link:hover::after { transform: scaleX(1); }
+
+    .btn-cta-header { margin-left: 0.75rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; border-radius: 99px; font-size: 0.875rem; font-weight: 600; color: var(--surface); box-shadow: 0 8px 30px rgba(6,182,212,0.25); transition: all 0.3s; }
+    .btn-cta-header:hover { box-shadow: 0 12px 40px rgba(34,211,238,0.4); transform: scale(1.05); }
+
+    .mobile-toggle { display: none; padding: 0.5rem; border-radius: 0.5rem; color: #94a3b8; transition: all 0.3s; }
+    .mobile-toggle:hover { color: #fff; background: rgba(255,255,255,0.1); }
+    .mobile-toggle svg { width: 24px; height: 24px; }
+
+    .mobile-nav { display: none; overflow: hidden; max-height: 0; opacity: 0; transition: all 0.3s; margin: 0.5rem 1.5rem 0; border-radius: 1rem; }
+    .mobile-nav.open { max-height: 20rem; opacity: 1; }
+    .mobile-nav-inner { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem; }
+    .mobile-nav-inner a { padding: 0.75rem 1rem; font-size: 0.875rem; font-weight: 500; color: #94a3b8; border-radius: 0.75rem; transition: all 0.3s; }
+    .mobile-nav-inner a:hover { color: #fff; background: rgba(255,255,255,0.05); }
+    .mobile-cta { margin-top: 0.5rem; text-align: center; padding: 0.75rem; border-radius: 0.75rem; font-weight: 600; font-size: 0.875rem; color: var(--surface); }
+
+    @media (max-width: 768px) {
+      .desktop-nav { display: none; }
+      .mobile-toggle { display: block; }
+      .mobile-nav { display: block; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       HERO
+       ═══════════════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      overflow: hidden; padding-top: 6rem;
+    }
+    .hero-bg { position: absolute; inset: 0; background: url('images/hero-ia.svg') center/cover no-repeat; opacity: 0.15; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(5,10,20,0.5), rgba(5,10,20,0.8), var(--surface)); }
+    .hero-blob-1 { position: absolute; top: 25%; left: 20%; width: 24rem; height: 24rem; border-radius: 50%; background: rgba(6,182,212,0.15); filter: blur(130px); }
+    .hero-blob-2 { position: absolute; bottom: 25%; right: 20%; width: 20rem; height: 20rem; border-radius: 50%; background: rgba(16,185,129,0.15); filter: blur(110px); }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.03;
+      background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-content { position: relative; z-index: 10; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; padding: 6rem 0; }
+    .hero-text { text-align: left; }
+
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.5rem 1rem; border-radius: 99px; margin-bottom: 2rem; }
+    .hero-badge img { width: 24px; height: 24px; }
+    .hero-badge span { font-size: 0.875rem; font-weight: 500; color: var(--brand-200); }
+
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.4rem, 5.5vw, 4.25rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
+    .hero h1 .subtitle { display: block; font-weight: 400; color: #cbd5e1; font-size: 0.62em; margin-top: 0.3em; }
+
+    .hero-desc { margin-top: 1.75rem; max-width: 36rem; font-size: 1.125rem; color: #94a3b8; line-height: 1.7; }
+    .hero-desc strong { color: #e2e8f0; font-weight: 500; }
+
+    .hero-cta { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; border-radius: 99px;
+      font-size: 1rem; font-weight: 600; color: var(--surface);
+      box-shadow: 0 12px 40px rgba(6,182,212,0.3); transition: all 0.3s;
+    }
+    .btn-primary:hover { box-shadow: 0 16px 50px rgba(34,211,238,0.5); transform: scale(1.05); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; border-radius: 99px;
+      font-size: 1rem; font-weight: 600; color: #fff; transition: all 0.3s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); transform: scale(1.05); }
+
+    .hero-stats { margin-top: 3.5rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 28rem; }
+    .stat-value { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; font-weight: 700; }
+    .stat-label { margin-top: 0.25rem; font-size: 0.8rem; color: #64748b; }
+
+    /* Chat Card */
+    .chat-card-wrap { position: relative; display: block; }
+    .chat-glow { position: absolute; inset: -2rem; border-radius: 2.5rem; background: linear-gradient(135deg, rgba(52,211,153,0.15), rgba(6,182,212,0.15), rgba(34,211,238,0.1)); filter: blur(48px); }
+    .chat-card { position: relative; border-radius: 1.5rem; padding: 1.5rem; box-shadow: 0 25px 60px rgba(5,10,20,0.5); }
+    .chat-header { display: flex; align-items: center; gap: 0.75rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .chat-avatar { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .chat-name { font-size: 0.875rem; font-weight: 600; }
+    .chat-status { display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; color: #64748b; }
+    .chat-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-400); animation: typingBounce 2s infinite; }
+    .chat-messages { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .msg-user { align-self: flex-end; max-width: 80%; padding: 0.75rem 1rem; border-radius: 1rem 1rem 0.25rem 1rem; background: rgba(255,255,255,0.1); font-size: 0.875rem; color: #e2e8f0; }
+    .msg-bot { align-self: flex-start; max-width: 85%; padding: 0.75rem 1rem; border-radius: 1rem 1rem 1rem 0.25rem; background: rgba(6,182,212,0.1); border: 1px solid rgba(34,211,238,0.2); font-size: 0.875rem; color: #e2e8f0; }
+    .typing-dots { display: flex; gap: 0.25rem; margin-top: 0.5rem; }
+    .typing-dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--brand-300); animation: typingBounce 1.4s ease-in-out infinite; }
+    .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+    .chat-input { margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.5rem 0.5rem 1rem; border-radius: 99px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); }
+    .chat-input span { flex: 1; font-size: 0.875rem; color: #64748b; }
+    .chat-send { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+
+    /* Floating chips */
+    .chip { position: absolute; padding: 0.75rem 1rem; border-radius: 1rem; box-shadow: 0 8px 30px rgba(0,0,0,0.3); font-size: 0.875rem; font-weight: 600; white-space: nowrap; }
+    .chip-1 { top: -1.5rem; right: -1.5rem; color: var(--accent-400); }
+    .chip-2 { left: -2rem; top: 50%; color: var(--brand-300); }
+    .chip-3 { bottom: -1.5rem; right: 2.5rem; color: #e2e8f0; }
+
+    .scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); text-align: center; }
+    .scroll-indicator span { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #64748b; margin-bottom: 0.5rem; }
+    .scroll-indicator svg { width: 20px; height: 20px; color: #64748b; animation: float 2s ease-in-out infinite; margin: 0 auto; }
+
+    @media (max-width: 1024px) {
+      .hero-content { grid-template-columns: 1fr; text-align: center; }
+      .hero-text { order: 1; }
+      .chat-card-wrap { display: none; }
+      .hero-stats { margin-left: auto; margin-right: auto; }
+      .hero-cta { justify-content: center; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       MARQUEE
+       ═══════════════════════════════════════════════ */
+    .marquee-section { border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 2.5rem 0; overflow: hidden; position: relative; }
+    .marquee-label { text-align: center; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: #64748b; margin-bottom: 1.5rem; }
+    .marquee-track { display: flex; width: max-content; animation: marquee 32s linear infinite; gap: 1rem; }
+    .marquee-item { display: inline-flex; align-items: center; gap: 0.625rem; white-space: nowrap; padding: 0.625rem 1.25rem; border-radius: 99px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); font-size: 0.875rem; font-weight: 500; color: #cbd5e1; transition: all 0.3s; }
+    .marquee-item:hover { border-color: rgba(34,211,238,0.3); color: #fff; }
+    .marquee-dot { width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-400), var(--brand-400)); }
+    .marquee-fade-l { position: absolute; top: 0; left: 0; bottom: 0; width: 8rem; background: linear-gradient(90deg, var(--surface), transparent); z-index: 2; pointer-events: none; }
+    .marquee-fade-r { position: absolute; top: 0; right: 0; bottom: 0; width: 8rem; background: linear-gradient(270deg, var(--surface), transparent); z-index: 2; pointer-events: none; }
+
+    /* ═══════════════════════════════════════════════
+       SECTION HEADER
+       ═══════════════════════════════════════════════ */
+    .section-sep { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(34,211,238,0.3), transparent); }
+    .section-tag { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: 99px; margin-bottom: 1.5rem; font-size: 0.875rem; font-weight: 500; color: var(--brand-300); }
+    .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
+    .section-desc { margin-top: 1rem; font-size: 1.125rem; color: #94a3b8; max-width: 40rem; margin-left: auto; margin-right: auto; }
+
+    /* ═══════════════════════════════════════════════
+       FILTRES
+       ═══════════════════════════════════════════════ */
+    .filters { display: flex; flex-wrap: wrap; gap: 0.625rem; justify-content: center; margin-bottom: 3rem; }
+    .filter-btn { padding: 0.625rem 1.25rem; border-radius: 99px; font-size: 0.875rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04); color: #cbd5e1; transition: all 0.3s; cursor: pointer; }
+    .filter-btn:hover { background: rgba(255,255,255,0.08); color: #fff; }
+    .filter-btn.active { background-image: linear-gradient(135deg, #34d399, #06b6d4, #22d3ee); color: var(--surface); border-color: transparent; box-shadow: 0 8px 30px rgba(6,182,212,0.3); transform: scale(1.05); }
+
+    /* ═══════════════════════════════════════════════
+       ARTICLES GRID
+       ═══════════════════════════════════════════════ */
+    .articles-section { position: relative; padding: 6rem 0 8rem; scroll-margin-top: 6rem; }
+    .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .article-card { display: flex; flex-direction: column; border-radius: 1rem; background: var(--surface-card); overflow: hidden; text-decoration: none; color: inherit; }
+    .article-card .card-thumb { position: relative; height: 10rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .article-card .card-thumb .emoji { font-size: 3.5rem; transition: transform 0.5s; }
+    .article-card:hover .card-thumb .emoji { transform: scale(1.25) rotate(12deg); }
+    .article-card .card-thumb .circle-1 { position: absolute; top: -2.5rem; right: -2.5rem; width: 8rem; height: 8rem; border-radius: 50%; background: rgba(255,255,255,0.05); transition: transform 0.7s; }
+    .article-card .card-thumb .circle-2 { position: absolute; bottom: -2rem; left: -2rem; width: 6rem; height: 6rem; border-radius: 50%; background: rgba(255,255,255,0.05); transition: transform 0.7s; }
+    .article-card:hover .circle-1, .article-card:hover .circle-2 { transform: scale(1.5); }
+
+    .badge-new { position: absolute; top: 1rem; right: 1rem; padding: 0.25rem 0.75rem; border-radius: 99px; background: var(--accent-500); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--surface); box-shadow: 0 8px 20px rgba(16,185,129,0.4); }
+
+    .card-body { flex: 1; display: flex; flex-direction: column; padding: 1.5rem; }
+    .card-cat { display: inline-flex; align-self: flex-start; align-items: center; gap: 0.375rem; padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.75rem; font-weight: 500; color: var(--brand-300); background: rgba(6,182,212,0.1); border: 1px solid rgba(34,211,238,0.2); }
+    .card-title { margin-top: 0.75rem; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; line-height: 1.35; color: #fff; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; transition: color 0.3s; }
+    .article-card:hover .card-title { color: var(--brand-200); }
+    .card-excerpt { margin-top: 0.5rem; flex: 1; font-size: 0.875rem; color: #94a3b8; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-link { margin-top: 1rem; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 500; color: var(--brand-400); transition: color 0.3s; }
+    .article-card:hover .card-link { color: var(--brand-300); }
+    .card-link svg { width: 16px; height: 16px; transition: transform 0.3s; }
+    .article-card:hover .card-link svg { transform: translate(4px, -4px); }
+
+    /* Gradients de tuiles */
+    .grad-1 { background: linear-gradient(135deg, rgba(16,185,129,0.25), rgba(20,184,166,0.1), rgba(6,182,212,0.25)); }
+    .grad-2 { background: linear-gradient(135deg, rgba(6,182,212,0.25), rgba(56,189,248,0.1), rgba(59,130,246,0.25)); }
+    .grad-3 { background: linear-gradient(135deg, rgba(245,158,11,0.25), rgba(249,115,22,0.1), rgba(244,63,94,0.25)); }
+    .grad-4 { background: linear-gradient(135deg, rgba(217,70,239,0.25), rgba(168,85,247,0.1), rgba(139,92,246,0.25)); }
+    .grad-5 { background: linear-gradient(135deg, rgba(20,184,166,0.25), rgba(16,185,129,0.1), rgba(132,204,22,0.25)); }
+    .grad-6 { background: linear-gradient(135deg, rgba(56,189,248,0.25), rgba(99,102,241,0.1), rgba(139,92,246,0.25)); }
+    .grad-7 { background: linear-gradient(135deg, rgba(244,63,94,0.25), rgba(236,72,153,0.1), rgba(217,70,239,0.25)); }
+    .grad-8 { background: linear-gradient(135deg, rgba(59,130,246,0.25), rgba(6,182,212,0.1), rgba(20,184,166,0.25)); }
+    .grad-9 { background: linear-gradient(135deg, rgba(249,115,22,0.25), rgba(239,68,68,0.1), rgba(245,158,11,0.25)); }
+
+    @media (max-width: 1024px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .articles-grid { grid-template-columns: 1fr; } }
+
+    /* ═══════════════════════════════════════════════
+       THEMES
+       ═══════════════════════════════════════════════ */
+    .themes-section { position: relative; padding: 6rem 0 8rem; scroll-margin-top: 6rem; }
+    .themes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .theme-card { position: relative; border-radius: 1.5rem; padding: 2rem; transition: all 0.5s; }
+    .theme-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(6,182,212,0.16); }
+    .theme-icon { width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; border-radius: 1rem; background: rgba(5,10,20,0.5); border: 1px solid rgba(255,255,255,0.1); font-size: 2rem; margin-bottom: 1.5rem; transition: transform 0.5s; }
+    .theme-card:hover .theme-icon { transform: scale(1.1) rotate(6deg); }
+    .theme-name { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .theme-desc { color: #94a3b8; line-height: 1.7; }
+    .theme-bar { margin-top: 1.5rem; height: 4px; width: 4rem; border-radius: 99px; transition: width 0.5s; }
+    .theme-card:hover .theme-bar { width: 100%; }
+
+    .theme-grad-1 { background: linear-gradient(135deg, rgba(52,211,153,0.15), rgba(16,185,129,0.1)); }
+    .theme-grad-1:hover { background: linear-gradient(135deg, rgba(52,211,153,0.25), rgba(16,185,129,0.2)); }
+    .theme-grad-2 { background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(34,211,238,0.1)); }
+    .theme-grad-2:hover { background: linear-gradient(135deg, rgba(6,182,212,0.25), rgba(34,211,238,0.2)); }
+    .theme-grad-3 { background: linear-gradient(135deg, rgba(56,189,248,0.15), rgba(59,130,246,0.1)); }
+    .theme-grad-3:hover { background: linear-gradient(135deg, rgba(56,189,248,0.25), rgba(59,130,246,0.2)); }
+
+    @media (max-width: 768px) { .themes-grid { grid-template-columns: 1fr; } }
+
+    /* ═══════════════════════════════════════════════
+       À PROPOS
+       ═══════════════════════════════════════════════ */
+    .about-section { position: relative; padding: 6rem 0 8rem; scroll-margin-top: 6rem; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; }
+    .about-text p { margin-top: 1.5rem; font-size: 1.1rem; color: #94a3b8; line-height: 1.7; }
+    .about-text p strong { color: #fff; font-weight: 600; }
+    .about-text .secondary { font-size: 1rem; color: #64748b; }
+
+    .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .feature-card { padding: 1.5rem; border-radius: 1rem; transition: transform 0.45s, box-shadow 0.45s; }
+    .feature-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(6,182,212,0.16); }
+    .feature-icon { width: 3rem; height: 3rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1rem; transition: transform 0.5s; }
+    .feature-card:hover .feature-icon { transform: scale(1.1); }
+    .feature-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; margin-bottom: 0.5rem; }
+    .feature-desc { font-size: 0.875rem; color: #94a3b8; }
+
+    .feat-grad-1 { background: linear-gradient(135deg, rgba(52,211,153,0.2), rgba(16,185,129,0.1)); }
+    .feat-grad-2 { background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(34,211,238,0.1)); }
+    .feat-grad-3 { background: linear-gradient(135deg, rgba(56,189,248,0.2), rgba(59,130,246,0.1)); }
+    .feat-grad-4 { background: linear-gradient(135deg, rgba(20,184,166,0.2), rgba(16,185,129,0.1)); }
+
+    @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; } }
+
+    /* ═══════════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════════ */
+    .contact-section { position: relative; padding: 6rem 0 8rem; scroll-margin-top: 6rem; }
+    .contact-form { max-width: 48rem; margin: 0 auto; border-radius: 1.5rem; padding: 2rem 2.5rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    .form-group label { display: block; font-size: 0.875rem; font-weight: 500; color: #cbd5e1; margin-bottom: 0.5rem; }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 0.75rem 1rem; border-radius: 0.75rem; font-size: 1rem;
+      border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05);
+      color: #fff; outline: none; transition: all 0.3s; font-family: inherit; resize: none;
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: #64748b; }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--brand-400); box-shadow: 0 0 0 3px rgba(34,211,238,0.15); }
+    .btn-submit {
+      display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; border-radius: 99px;
+      font-size: 1rem; font-weight: 600; color: var(--surface);
+      box-shadow: 0 12px 40px rgba(6,182,212,0.25); transition: all 0.3s; cursor: pointer; border: none;
+    }
+    .btn-submit:hover { box-shadow: 0 16px 50px rgba(34,211,238,0.5); transform: scale(1.05); }
+    .form-message { margin-top: 1rem; display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.75rem; font-size: 0.875rem; }
+    .form-message.success { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); color: var(--accent-400); }
+    .form-message.error { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); color: #f87171; }
+
+    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .contact-form { padding: 1.5rem; } }
+
+    /* ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ */
+    .site-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 0; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; }
+    .footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .footer-logo img { width: 36px; height: 36px; border-radius: 10px; }
+    .footer-desc { font-size: 0.875rem; color: #64748b; line-height: 1.6; }
+    .footer-col-links { display: flex; gap: 4rem; }
+    .footer-col h4 { font-family: 'Space Grotesk', sans-serif; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { font-size: 0.875rem; color: #64748b; transition: color 0.3s; }
+    .footer-col a:hover { color: var(--brand-400); }
+    .footer-cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; border-radius: 99px; font-size: 0.875rem; font-weight: 500; color: var(--brand-300); border: 1px solid rgba(34,211,238,0.2); background: rgba(6,182,212,0.1); transition: all 0.3s; }
+    .footer-cta:hover { background: rgba(6,182,212,0.2); border-color: rgba(34,211,238,0.4); }
+    .footer-bottom { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; font-size: 0.75rem; color: #475569; }
+
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; align-items: center; }
+    }
+  </style>
 </head>
 
 <body>
-<!-- Bouton Guide IA & SEO Local Algérie -->
-<div class="banner-guide-ia">
-  <a href="https://ia.softhomedz.com" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-guide-ia-banner">
-    🚀 Découvrir le Guide IA & SEO Local Algérie
-  </a>
-</div>
-  <!-- ===== EN-TÊTE + NAVIGATION ===== -->
-  <header class="site-header">
+  <!-- ═══════ HEADER ═══════ -->
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="/" class="logo"><img class="logo-mark" src="/images/logo.svg" alt="" width="34" height="30">SoftHome<span>DZ</span></a>
-      <nav aria-label="Navigation principale">
-        <a href="#articles">Articles</a>
+      <a href="#" class="logo-link">
+        <svg class="logo-icon" viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lg)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/><circle cx="46" cy="45" r="3.2" fill="#fff" opacity=".85"/></svg>
+        <span class="logo-text">Soft<span class="aurora-text">Home</span><span class="logo-dz">DZ</span></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#articles" class="nav-link">Guides</a>
+        <a href="#themes" class="nav-link">Thèmes</a>
+        <a href="#apropos" class="nav-link">À propos</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-cta-header btn-shine aurora-gradient">
+          ✨ Guide IA
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav glass-light" id="mobile-nav">
+      <div class="mobile-nav-inner">
+        <a href="#articles">Guides</a>
         <a href="#themes">Thèmes</a>
         <a href="#apropos">À propos</a>
-       <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer">🤖 Guide IA</a>
         <a href="#contact">Contact</a>
-        <a href="/ar/" class="lang-switch" lang="ar" hreflang="ar">العربية</a>
-      </nav>
+        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="mobile-cta aurora-gradient">✨ Guide IA</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- ===== HÉRO ===== -->
+    <!-- ═══════ HERO ═══════ -->
     <section class="hero">
-      <div class="container">
-        <p class="hero-badge">🤖 Guides IA en français — 100% pratique</p>
-        <h1>Maîtrisez les outils IA gratuits et gagnez du temps (et de l'argent)</h1>
-        <p class="hero-sub">Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces. Sans jargon, sans coder.</p>
-        <a href="#articles" class="btn">Lire les guides</a>
-        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-guide-ia-hero">🚀 Découvrir le Guide IA</a>
-        <img class="hero-img" fetchpriority="high" src="images/hero-ia.svg" alt="Réseau de neurones illustrant l'intelligence artificielle" width="800" height="500">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-blob-1 animate-float"></div>
+      <div class="hero-blob-2 animate-float-delayed"></div>
+      <div class="hero-grid"></div>
+
+      <div class="container hero-content">
+        <!-- Texte -->
+        <div class="hero-text">
+          <div class="hero-badge glass-light fade-up">
+            <svg width="24" height="24" viewBox="0 0 64 64"><defs><linearGradient id="lb" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lb)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/></svg>
+            <span>Guides IA en français — 100% pratique</span>
+          </div>
+
+          <h1 class="fade-up stagger-1">
+            Maîtrisez les outils <span class="aurora-text">IA gratuits</span>
+            <span class="subtitle">et gagnez du temps (et de l'argent)</span>
+          </h1>
+
+          <p class="hero-desc fade-up stagger-2">
+            Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces.
+            <strong>Sans jargon, sans coder.</strong>
+          </p>
+
+          <div class="hero-cta fade-up stagger-3">
+            <a href="#articles" class="btn-primary btn-shine aurora-gradient">📚 Lire les guides</a>
+            <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-secondary glass-light">✨ Découvrir le Guide IA</a>
+          </div>
+
+          <div class="hero-stats fade-up stagger-4">
+            <div><div class="stat-value aurora-text">9+</div><div class="stat-label">Guides détaillés</div></div>
+            <div><div class="stat-value aurora-text">100%</div><div class="stat-label">Gratuit</div></div>
+            <div><div class="stat-value aurora-text">🇫🇷</div><div class="stat-label">En français</div></div>
+          </div>
+        </div>
+
+        <!-- Carte de chat IA -->
+        <div class="chat-card-wrap fade-up stagger-3">
+          <div class="chat-glow"></div>
+          <div class="chat-card glass gradient-border">
+            <div class="chat-header">
+              <div class="chat-avatar aurora-gradient">✨</div>
+              <div>
+                <div class="chat-name">Assistant IA</div>
+                <div class="chat-status"><span class="chat-dot"></span> En ligne</div>
+              </div>
+            </div>
+            <div class="chat-messages">
+              <div class="msg-user">Comment gagner du temps avec l'IA gratuitement ?</div>
+              <div class="msg-bot">
+                Voici 5 outils gratuits, expliqués pas à pas — en français simple, sans jargon :
+                <div class="typing-dots"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="chat-input">
+              <span>Écrivez votre question…</span>
+              <div class="chat-send aurora-gradient">➤</div>
+            </div>
+          </div>
+          <div class="chip chip-1 glass-light animate-float">✨ 100% gratuit</div>
+          <div class="chip chip-2 glass-light animate-float-delayed">🇫🇷 En français</div>
+          <div class="chip chip-3 glass-light animate-float">💡 Sans jargon</div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator fade-up stagger-5">
+        <span>Découvrir</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
       </div>
     </section>
 
-    <!-- ===== ARTICLES ===== -->
-    <section id="articles" class="section">
-      <div class="container">
-        <h2>Derniers guides</h2>
-        <div class="grid">
-          <article class="card">
-            <img class="card-img" src="images/argent-ia.svg" alt="Pièces de monnaie et circuits électroniques : gagner de l'argent avec l'IA" width="800" height="500" loading="lazy">
-            <p class="card-tag">💰 Argent en ligne</p>
-            <h3><a href="articles/gagner-argent-outils-ia-gratuits.html">Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes</a></h3>
-            <p>Rédaction, micro-services, création de contenu… les méthodes qui fonctionnent vraiment en 2026, sans investissement de départ.</p>
-            <a class="card-link" href="articles/gagner-argent-outils-ia-gratuits.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/commerce-ia.svg" alt="Boutique de petit commerce connectée à l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">🏪 IA pour votre métier</p>
-            <h3><a href="articles/ia-petits-commerces.html">L'IA pour les petits commerces : 7 usages concrets et gratuits</a></h3>
-            <p>Répondre aux clients, créer vos publications, gérer votre stock d'idées : comment un petit commerce utilise l'IA sans budget.</p>
-            <a class="card-link" href="articles/ia-petits-commerces.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/chatgpt-debutant.svg" alt="Conversation avec un assistant IA sur un téléphone" width="800" height="500" loading="lazy">
-            <p class="card-tag">🚀 Débuter</p>
-            <h3><a href="articles/chatgpt-guide-debutant.html">ChatGPT gratuit en français : le guide du vrai débutant</a></h3>
-            <p>Créer un compte, écrire sa première demande, éviter les pièges : tout ce qu'il faut savoir pour bien démarrer avec l'IA.</p>
-            <a class="card-link" href="articles/chatgpt-guide-debutant.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/prompts-chatgpt.svg" alt="Fiches de prompts ChatGPT prêts à copier" width="800" height="500" loading="lazy">
-            <p class="card-tag">✍️ Débuter</p>
-            <h3><a href="articles/prompts-chatgpt-exemples.html">30 prompts ChatGPT prêts à copier</a></h3>
-            <p>Rédaction, travail, commerce, études, traduction : 30 formulations à copier-coller, plus la méthode pour écrire les vôtres.</p>
-            <a class="card-link" href="articles/prompts-chatgpt-exemples.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/outils-ia-gratuits.svg" alt="Comparatif des meilleurs outils IA gratuits" width="800" height="500" loading="lazy">
-            <p class="card-tag">🧰 Outils testés</p>
-            <h3><a href="articles/meilleurs-outils-ia-gratuits.html">Meilleurs outils IA gratuits en 2026 : le comparatif honnête</a></h3>
-            <p>ChatGPT, Mistral Le Chat, Gemini, Claude, DeepL, Canva : lequel choisir selon votre besoin réel, et les vraies limites du gratuit.</p>
-            <a class="card-link" href="articles/meilleurs-outils-ia-gratuits.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/images-ia.svg" alt="Génération d'une image par intelligence artificielle à partir d'une phrase" width="800" height="500" loading="lazy">
-            <p class="card-tag">🎨 Créer</p>
-            <h3><a href="articles/creer-images-ia-gratuit.html">Créer des images avec l'IA gratuitement</a></h3>
-            <p>La recette d'une bonne description en 5 éléments, les erreurs qui gâchent tout, et ce qu'il faut savoir sur les droits d'utilisation.</p>
-            <a class="card-link" href="articles/creer-images-ia-gratuit.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/ia-etudiants.svg" alt="Étudiant utilisant l'IA pour résumer et réviser ses cours" width="800" height="500" loading="lazy">
-            <p class="card-tag">🎓 Études</p>
-            <h3><a href="articles/ia-pour-etudiants.html">L'IA pour les étudiants : réviser, résumer, rédiger</a></h3>
-            <p>Fiches de révision, interrogation active, plans de dissertation : l'IA comme répétiteur — sans tricher, et sans se mentir.</p>
-            <a class="card-link" href="articles/ia-pour-etudiants.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/instagram-ia.svg" alt="Publication Instagram créée avec l'aide de l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">📸 IA pour votre métier</p>
-            <h3><a href="articles/ia-pour-instagram.html">L'IA pour Instagram : légendes, visuels et hashtags</a></h3>
-            <p>Écrire vos légendes, choisir vos hashtags, tenir un calendrier : faire vivre votre page sans y passer vos soirées.</p>
-            <a class="card-link" href="articles/ia-pour-instagram.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/cv-ia.svg" alt="CV amélioré avec l'aide de l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">💼 Emploi</p>
-            <h3><a href="articles/rediger-cv-avec-ia.html">Rédiger un CV avec l'IA : le guide honnête</a></h3>
-            <p>Transformer les tâches en résultats, adapter le CV à chaque offre, préparer l'entretien — sans jamais mentir.</p>
-            <a class="card-link" href="articles/rediger-cv-avec-ia.html">Lire le guide →</a>
-          </article>
+    <!-- ═══════ MARQUEE ═══════ -->
+    <section class="marquee-section">
+      <p class="marquee-label">Les outils que nous couvrons</p>
+      <div style="position:relative">
+        <div class="marquee-fade-l"></div>
+        <div class="marquee-fade-r"></div>
+        <div class="marquee-track">
+          <span class="marquee-item"><span class="marquee-dot"></span>ChatGPT</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Mistral Le Chat</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Gemini</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Claude</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>DeepL</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Canva</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Microsoft Copilot</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Midjourney</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Leonardo AI</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Notion AI</span>
+          <!-- Duplication pour boucle -->
+          <span class="marquee-item"><span class="marquee-dot"></span>ChatGPT</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Mistral Le Chat</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Gemini</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Claude</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>DeepL</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Canva</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Microsoft Copilot</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Midjourney</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Leonardo AI</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Notion AI</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== THÈMES ===== -->
-    <section id="themes" class="section section-alt">
-      <div class="container">
-        <h2>Nos thèmes</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>💰 Gagner de l'argent avec l'IA</h3>
-            <p>Méthodes réalistes pour générer un revenu en ligne grâce aux outils IA gratuits : freelancing, contenu, micro-services.</p>
-          </article>
-          <article class="card">
-            <h3>🏪 L'IA pour votre métier</h3>
-            <p>Commerçants, freelances, immobilier, étudiants : des usages concrets de l'IA adaptés à votre activité quotidienne.</p>
-          </article>
-          <article class="card">
-            <h3>🧰 Outils IA gratuits testés</h3>
-            <p>Comparatifs et tests honnêtes des meilleurs outils gratuits : ChatGPT, Mistral Le Chat, DeepL, générateurs d'images…</p>
-          </article>
+    <!-- ═══════ ARTICLES ═══════ -->
+    <section class="articles-section" id="articles">
+      <div class="section-sep"></div>
+      <div class="container" style="text-align:center">
+        <div class="section-tag glass-light">📚 Derniers guides</div>
+        <h2 class="section-title">Apprenez l'IA <span class="aurora-text">pas à pas</span></h2>
+        <p class="section-desc">Des tutoriels concrets, testés et écrits en français simple. Pas de blabla, que du pratique.</p>
+
+        <!-- Filtres -->
+        <div class="filters" id="filters" style="margin-top:3rem">
+          <button class="filter-btn active" data-cat="all">Tous</button>
+          <button class="filter-btn" data-cat="Argent en ligne">💰 Argent en ligne</button>
+          <button class="filter-btn" data-cat="IA pour votre métier">🏪 IA pour votre métier</button>
+          <button class="filter-btn" data-cat="Débuter">🚀 Débuter</button>
+          <button class="filter-btn" data-cat="Outils testés">🧰 Outils testés</button>
+          <button class="filter-btn" data-cat="Créer">🎨 Créer</button>
+          <button class="filter-btn" data-cat="Études">🎓 Études</button>
+          <button class="filter-btn" data-cat="Emploi">💼 Emploi</button>
+        </div>
+
+        <div class="articles-grid" id="articles-grid">
+          <!-- 1 -->
+          <a href="articles/gagner-argent-outils-ia-gratuits.html" class="article-card card-hover gradient-border" data-cat="Argent en ligne">
+            <div class="card-thumb grad-1"><span class="emoji">💰</span><div class="circle-1"></div><div class="circle-2"></div><span class="badge-new">Nouveau</span></div>
+            <div class="card-body">
+              <span class="card-cat">💰 Argent en ligne</span>
+              <h3 class="card-title">Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes</h3>
+              <p class="card-excerpt">Rédaction, micro-services, création de contenu… les méthodes qui fonctionnent vraiment en 2026, sans investissement de départ.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 2 -->
+          <a href="articles/ia-petits-commerces.html" class="article-card card-hover gradient-border" data-cat="IA pour votre métier">
+            <div class="card-thumb grad-2"><span class="emoji">🏪</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">🏪 IA pour votre métier</span>
+              <h3 class="card-title">L'IA pour les petits commerces : 7 usages concrets et gratuits</h3>
+              <p class="card-excerpt">Répondre aux clients, créer vos publications, gérer votre stock d'idées : comment un petit commerce utilise l'IA sans budget.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 3 -->
+          <a href="articles/chatgpt-guide-debutant.html" class="article-card card-hover gradient-border" data-cat="Débuter">
+            <div class="card-thumb grad-3"><span class="emoji">🚀</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">🚀 Débuter</span>
+              <h3 class="card-title">ChatGPT gratuit en français : le guide du vrai débutant</h3>
+              <p class="card-excerpt">Créer un compte, écrire sa première demande, éviter les pièges : tout ce qu'il faut savoir pour bien démarrer avec l'IA.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 4 -->
+          <a href="articles/prompts-chatgpt-exemples.html" class="article-card card-hover gradient-border" data-cat="Débuter">
+            <div class="card-thumb grad-4"><span class="emoji">✍️</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">✍️ Débuter</span>
+              <h3 class="card-title">30 prompts ChatGPT prêts à copier</h3>
+              <p class="card-excerpt">Rédaction, travail, commerce, études, traduction : 30 formulations à copier-coller, plus la méthode pour écrire les vôtres.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 5 -->
+          <a href="articles/meilleurs-outils-ia-gratuits.html" class="article-card card-hover gradient-border" data-cat="Outils testés">
+            <div class="card-thumb grad-5"><span class="emoji">🧰</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">🧰 Outils testés</span>
+              <h3 class="card-title">Meilleurs outils IA gratuits en 2026 : le comparatif honnête</h3>
+              <p class="card-excerpt">ChatGPT, Mistral Le Chat, Gemini, Claude, DeepL, Canva : lequel choisir selon votre besoin réel, et les vraies limites du gratuit.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 6 -->
+          <a href="articles/creer-images-ia-gratuit.html" class="article-card card-hover gradient-border" data-cat="Créer">
+            <div class="card-thumb grad-6"><span class="emoji">🎨</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">🎨 Créer</span>
+              <h3 class="card-title">Créer des images avec l'IA gratuitement</h3>
+              <p class="card-excerpt">La recette d'une bonne description en 5 éléments, les erreurs qui gâchent tout, et ce qu'il faut savoir sur les droits d'utilisation.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 7 -->
+          <a href="articles/ia-pour-etudiants.html" class="article-card card-hover gradient-border" data-cat="Études">
+            <div class="card-thumb grad-7"><span class="emoji">🎓</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">🎓 Études</span>
+              <h3 class="card-title">L'IA pour les étudiants : réviser, résumer, rédiger</h3>
+              <p class="card-excerpt">Fiches de révision, interrogation active, plans de dissertation : l'IA comme répétiteur — sans tricher, et sans se mentir.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 8 -->
+          <a href="articles/ia-pour-instagram.html" class="article-card card-hover gradient-border" data-cat="IA pour votre métier">
+            <div class="card-thumb grad-8"><span class="emoji">📸</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">📸 IA pour votre métier</span>
+              <h3 class="card-title">L'IA pour Instagram : légendes, visuels et hashtags</h3>
+              <p class="card-excerpt">Écrire vos légendes, choisir vos hashtags, tenir un calendrier : faire vivre votre page sans y passer vos soirées.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <!-- 9 -->
+          <a href="articles/rediger-cv-avec-ia.html" class="article-card card-hover gradient-border" data-cat="Emploi">
+            <div class="card-thumb grad-9"><span class="emoji">💼</span><div class="circle-1"></div><div class="circle-2"></div></div>
+            <div class="card-body">
+              <span class="card-cat">💼 Emploi</span>
+              <h3 class="card-title">Rédiger un CV avec l'IA : le guide honnête</h3>
+              <p class="card-excerpt">Transformer les tâches en résultats, adapter le CV à chaque offre, préparer l'entretien — sans jamais mentir.</p>
+              <span class="card-link">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== À PROPOS ===== -->
-    <section id="apropos" class="section">
-      <div class="container">
-        <h2>À propos de SoftHome DZ</h2>
-        <p>SoftHome DZ est un site francophone dédié à l'intelligence artificielle <strong>pratique</strong>. Notre mission : rendre les outils IA accessibles à tous — sans jargon technique, sans anglais obligatoire, et en privilégiant les outils <strong>gratuits</strong>.</p>
-        <p>Que vous soyez freelance, étudiant, commerçant ou simplement curieux, vous trouverez ici des guides pas à pas testés réellement, pensés pour le public francophone d'Algérie, du Maghreb, de France et d'ailleurs. Pas de promesses miracles : uniquement des méthodes concrètes qui font gagner du temps et, souvent, de l'argent.</p>
+    <!-- ═══════ THÈMES ═══════ -->
+    <section class="themes-section" id="themes">
+      <div class="section-sep"></div>
+      <div class="container" style="text-align:center">
+        <div class="section-tag glass-light">🎯 Nos thèmes</div>
+        <h2 class="section-title">Explorez par <span class="aurora-text">thématique</span></h2>
+        <p class="section-desc">Trouvez le contenu adapté à votre situation : freelance, étudiant, commerçant ou curieux.</p>
+
+        <div class="themes-grid" style="margin-top:3rem; text-align:left">
+          <div class="theme-card theme-grad-1 gradient-border">
+            <div class="theme-icon">💰</div>
+            <h3 class="theme-name font-display">Gagner de l'argent avec l'IA</h3>
+            <p class="theme-desc">Méthodes réalistes pour générer un revenu en ligne grâce aux outils IA gratuits : freelancing, contenu, micro-services.</p>
+            <div class="theme-bar aurora-gradient"></div>
+          </div>
+          <div class="theme-card theme-grad-2 gradient-border">
+            <div class="theme-icon">🏪</div>
+            <h3 class="theme-name font-display">L'IA pour votre métier</h3>
+            <p class="theme-desc">Commerçants, freelances, immobilier, étudiants : des usages concrets de l'IA adaptés à votre activité quotidienne.</p>
+            <div class="theme-bar aurora-gradient"></div>
+          </div>
+          <div class="theme-card theme-grad-3 gradient-border">
+            <div class="theme-icon">🧰</div>
+            <h3 class="theme-name font-display">Outils IA gratuits testés</h3>
+            <p class="theme-desc">Comparatifs et tests honnêtes des meilleurs outils gratuits : ChatGPT, Mistral Le Chat, DeepL, générateurs d'images…</p>
+            <div class="theme-bar aurora-gradient"></div>
+          </div>
+        </div>
       </div>
     </section>
-<nav aria-label="Navigation principale">
-  <a href="/#articles">Articles</a>
-  <a href="/#themes">Thèmes</a>
-  <a href="/#apropos">À propos</a>
-  <a href="/#contact">Contact</a>
-</nav>
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section section-alt">
+
+    <!-- ═══════ À PROPOS ═══════ -->
+    <section class="about-section" id="apropos">
+      <div class="section-sep"></div>
       <div class="container">
-        <h2>Contact</h2>
-        <p>Une question, une suggestion d'article, un partenariat ?</p>
-        <p>Email : <a href="mailto:contact@softhomedz.com">contact@softhomedz.com</a></p>
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-tag glass-light">ℹ️ À propos</div>
+            <h2>L'IA accessible <span class="aurora-text">à tous</span></h2>
+            <p>SoftHome DZ est un site francophone dédié à l'intelligence artificielle <strong>pratique</strong>. Notre mission : rendre les outils IA accessibles à tous — sans jargon technique, sans anglais obligatoire, et en privilégiant les outils <strong>gratuits</strong>.</p>
+            <p class="secondary">Que vous soyez freelance, étudiant, commerçant ou simplement curieux, vous trouverez ici des guides pas à pas testés réellement, pensés pour le public francophone d'Algérie, du Maghreb, de France et d'ailleurs. Pas de promesses miracles : uniquement des méthodes concrètes qui font gagner du temps et, souvent, de l'argent.</p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card glass-light">
+              <div class="feature-icon feat-grad-1">❤️</div>
+              <div class="feature-name font-display">Sans jargon</div>
+              <p class="feature-desc">Tout est expliqué en français simple, pas besoin d'être développeur.</p>
+            </div>
+            <div class="feature-card glass-light">
+              <div class="feature-icon feat-grad-2">⚡</div>
+              <div class="feature-name font-display">100% gratuit</div>
+              <p class="feature-desc">On privilégie les outils gratuits, pas de dépenses cachées.</p>
+            </div>
+            <div class="feature-card glass-light">
+              <div class="feature-icon feat-grad-3">🌍</div>
+              <div class="feature-name font-display">Francophone</div>
+              <p class="feature-desc">Pour l'Algérie, le Maghreb, la France et tous les francophones.</p>
+            </div>
+            <div class="feature-card glass-light">
+              <div class="feature-icon feat-grad-4">✅</div>
+              <div class="feature-name font-display">Testé réellement</div>
+              <p class="feature-desc">Chaque guide est vérifié avec de vrais exemples concrets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ CONTACT ═══════ -->
+    <section class="contact-section" id="contact">
+      <div class="section-sep"></div>
+      <div class="container" style="text-align:center">
+        <div class="section-tag glass-light">✉️ Contact</div>
+        <h2 class="section-title">Une question ? <span class="aurora-text">Écrivez-nous</span></h2>
+        <p class="section-desc">Nous répondons à toutes les questions sur l'IA en français.</p>
+
+        <form class="contact-form glass-light" id="contact-form" style="margin-top:3rem; text-align:left">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input id="name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="votre@email.com">
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.5rem">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5" placeholder="Votre message..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit btn-shine aurora-gradient">✉️ Envoyer le message</button>
+          <div id="form-feedback"></div>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- ===== PIED DE PAGE ===== -->
+  <!-- ═══════ FOOTER ═══════ -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 SoftHome DZ — softhomedz.com. Tous droits réservés.</p>
-      <p class="footer-links"><a href="#articles">Articles</a> · <a href="#apropos">À propos</a> · <a href="#contact">Contact</a> · <a href="/confidentialite.html">Confidentialité</a> · <a href="https://www.facebook.com/softhomedz" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/1001softhomedz" target="_blank" rel="noopener">Instagram</a></p>
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo">
+            <svg width="36" height="36" viewBox="0 0 64 64"><defs><linearGradient id="lf" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lf)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/><circle cx="46" cy="45" r="3.2" fill="#fff" opacity=".85"/></svg>
+            <span class="logo-text" style="font-size:1.1rem">Soft<span class="aurora-text">Home</span><span class="logo-dz">DZ</span></span>
+          </a>
+          <p class="footer-desc">L'IA pratique en français.<br>Guides, tutoriels et outils gratuits.</p>
+        </div>
+        <div class="footer-col-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#articles">Guides</a></li>
+              <li><a href="#themes">Thèmes</a></li>
+              <li><a href="#apropos">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ressources</h4>
+            <ul>
+              <li><a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer">Guide IA</a></li>
+              <li><a href="https://www.softhomedz.com" target="_blank" rel="noopener noreferrer">Site principal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col"><h4>Restez informé</h4></div>
+          <p class="footer-desc" style="margin-bottom:1rem">Suivez nos derniers guides IA directement sur le site.</p>
+          <a href="#articles" class="footer-cta">Voir les guides →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SoftHome DZ. Tous droits réservés.</p>
+        <p>Fait avec ❤️ pour la communauté francophone</p>
+      </div>
     </div>
   </footer>
 
+  <!-- ═══════ JAVASCRIPT ═══════ -->
+  <script>
+    // Header scroll
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Mobile menu
+    const toggle = document.getElementById('mobile-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    toggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+    // Filtres
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.article-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        cards.forEach(card => {
+          if (cat === 'all' || card.dataset.cat === cat) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Contact form (remplacer l'URL par votre endpoint réel)
+    const form = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Simuler l'envoi — remplacez par votre propre backend
+      feedback.innerHTML = '<div class="form-message success">✅ Message envoyé avec succès ! Merci pour votre intérêt.</div>';
+      form.reset();
+      setTimeout(() => feedback.innerHTML = '', 5000);
+    });
+  </script>
 </body>
 </html>
