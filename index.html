@@ -1,791 +1,215 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoftHome DZ — Outils IA gratuits &amp; Productivité en français</title>
-  <meta name="description" content="Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces. Sans jargon, sans coder.">
-  <meta property="og:title" content="SoftHome DZ — Outils IA gratuits & Productivité en français">
-  <meta property="og:description" content="Guides IA en français — 100% pratique. Maîtrisez les outils IA gratuits et gagnez du temps.">
-  <meta property="og:locale" content="fr_FR">
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- ===== SEO ===== -->
+  <title>أدوات الذكاء الاصطناعي المجانية والإنتاجية — أدلة بالعربية | SoftHome DZ</title>
+  <meta name="description" content="دروس الذكاء الاصطناعي بالعربية البسيطة: اربح المال عبر الإنترنت بأدوات الذكاء الاصطناعي المجانية، ChatGPT، الإنتاجية للمستقلين والمحلات التجارية. أدلة خطوة بخطوة.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://softhomedz.com/ar/">
+
+  <!-- ===== HREFLANG (versions linguistiques) ===== -->
+  <link rel="alternate" hreflang="fr" href="https://softhomedz.com/">
+  <link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://softhomedz.com/">
+
+  <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#050a14">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="SoftHome DZ — أدوات الذكاء الاصطناعي المجانية والإنتاجية بالعربية">
+  <meta property="og:description" content="أدلة عملية بالعربية: اربح المال بأدوات الذكاء الاصطناعي المجانية، ChatGPT لمهنتك، الإنتاجية للمستقلين.">
+  <meta property="og:image" content="https://softhomedz.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://softhomedz.com/ar/">
+  <meta property="og:locale" content="ar_DZ">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:site_name" content="SoftHome DZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://softhomedz.com/images/og-image.jpg">
 
-  <!-- Polices Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* ═══════════════════════════════════════
-       RESET
-       ═══════════════════════════════════════ */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-
-    :root{
-      --brand-200:#a5f3fc;--brand-300:#67e8f9;--brand-400:#22d3ee;
-      --brand-500:#06b6d4;--brand-600:#0891b2;--brand-700:#0e7490;
-      --accent-400:#34d399;--accent-500:#10b981;
-      --surface:#050a14;--surface-light:#0a1322;--surface-card:#0e1b30;
+  <!-- ===== JSON-LD ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SoftHome DZ",
+    "url": "https://softhomedz.com/ar/",
+    "description": "أدلة بالعربية حول أدوات الذكاء الاصطناعي المجانية والإنتاجية: ربح المال عبر الإنترنت، الذكاء الاصطناعي للمستقلين والمحلات التجارية.",
+    "inLanguage": "ar",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SoftHome DZ",
+      "url": "https://softhomedz.com/",
+      "sameAs": ["https://www.facebook.com/softhomedz", "https://www.instagram.com/1001softhomedz"]
     }
+  }
+  </script>
 
-    body{
-      font-family:'Inter',system-ui,-apple-system,sans-serif;
-      background:var(--surface);
-      background-image:
-        radial-gradient(ellipse 80% 50% at 50% -10%,rgba(34,211,238,.07),transparent),
-        radial-gradient(ellipse 60% 40% at 95% 35%,rgba(52,211,153,.05),transparent);
-      color:#fff;-webkit-font-smoothing:antialiased;
-      overflow-x:hidden;line-height:1.6;
-    }
+  <!-- Preload de l'image LCP (hero) : le navigateur la récupère au plus tôt -->
+  <link rel="preload" as="image" href="../images/hero-ia.svg" fetchpriority="high">
+  <link rel="stylesheet" href="../style.css">
 
-    ::selection{background:var(--brand-400);color:var(--surface)}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;height:auto;display:block}
-    button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
-
-    .fd{font-family:'Space Grotesk','Inter',sans-serif}
-
-    /* ═══════════════════════════════════════
-       UTILS
-       ═══════════════════════════════════════ */
-    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
-
-    .ag{background:linear-gradient(135deg,#34d399,#06b6d4 55%,#22d3ee)}
-
-    .at{
-      background:linear-gradient(120deg,#6ee7b7,#22d3ee 45%,#67e8f9 80%);
-      -webkit-background-clip:text;background-clip:text;
-      -webkit-text-fill-color:transparent;color:transparent;
-    }
-
-    .gl{
-      background:rgba(10,19,34,.72);
-      backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-      border:1px solid rgba(103,232,249,.08);
-    }
-    .gll{
-      background:rgba(103,232,249,.05);
-      backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-      border:1px solid rgba(103,232,249,.12);
-    }
-
-    .gb{position:relative}
-    .gb::before{
-      content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
-      background:linear-gradient(135deg,rgba(34,211,238,.4),rgba(52,211,153,.15),rgba(34,211,238,.08));
-      -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-      -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;
-    }
-
-    .bs{position:relative;overflow:hidden}
-    .bs::after{
-      content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;
-      background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
-      transform:skewX(-20deg);animation:shine 3.5s infinite;pointer-events:none;
-    }
-
-    .ch{transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}
-    .ch:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(6,182,212,.14)}
-
-    /* ═══════════════════════════════════════
-       ANIMATIONS
-       ═══════════════════════════════════════ */
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-    @keyframes shine{0%{left:-75%}60%,100%{left:125%}}
-    @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
-    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    @keyframes tb{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-5px);opacity:1}}
-
-    .fu{opacity:0;transform:translateY(24px);animation:fadeUp .7s ease forwards}
-    .s1{animation-delay:.1s}.s2{animation-delay:.2s}.s3{animation-delay:.3s}
-    .s4{animation-delay:.4s}.s5{animation-delay:.5s}
-    .af{animation:float 6s ease-in-out infinite}
-    .afd{animation:float 7s ease-in-out infinite 2.5s}
-
-    /* ═══════════════════════════════════════
-       HEADER
-       ═══════════════════════════════════════ */
-    .hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:1rem 0;transition:all .5s}
-    .hdr.sc{padding:.6rem 0;background:rgba(10,19,34,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(103,232,249,.08);box-shadow:0 8px 32px rgba(0,0,0,.3)}
-    .hdr-in{display:flex;align-items:center;justify-content:space-between}
-
-    .logo{display:flex;align-items:center;gap:.6rem}
-    .logo svg{width:36px;height:36px;border-radius:10px;transition:transform .3s}
-    .logo:hover svg{transform:scale(1.1) rotate(3deg)}
-    .logo-t{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:700}
-    .logo-dz{margin-left:.3rem;font-size:.75rem;font-weight:600;color:var(--brand-300);background:rgba(6,182,212,.1);padding:.1rem .35rem;border-radius:.3rem;border:1px solid rgba(34,211,238,.2)}
-
-    .dnav{display:flex;align-items:center;gap:.2rem}
-    .nl{position:relative;padding:.4rem .8rem;font-size:.8rem;font-weight:500;color:#94a3b8;border-radius:.4rem;transition:all .3s}
-    .nl:hover{color:#fff;background:rgba(255,255,255,.05)}
-    .nl::after{content:"";position:absolute;left:.8rem;right:.8rem;bottom:-1px;height:1px;background:linear-gradient(90deg,var(--accent-400),var(--brand-400));transform:scaleX(0);transition:transform .3s}
-    .nl:hover::after{transform:scaleX(1)}
-    .cta-h{margin-left:.6rem;display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:99px;font-size:.8rem;font-weight:600;color:var(--surface);box-shadow:0 6px 24px rgba(6,182,212,.25);transition:all .3s}
-    .cta-h:hover{box-shadow:0 10px 32px rgba(34,211,238,.4);transform:scale(1.05)}
-
-    .mt{display:none;padding:.4rem;border-radius:.4rem;color:#94a3b8;transition:all .3s}
-    .mt:hover{color:#fff;background:rgba(255,255,255,.1)}
-    .mt svg{width:22px;height:22px}
-
-    .mn{display:none;overflow:hidden;max-height:0;opacity:0;transition:all .3s;margin:.4rem 1.5rem 0;border-radius:.8rem}
-    .mn.open{max-height:18rem;opacity:1}
-    .mn-in{display:flex;flex-direction:column;gap:.2rem;padding:.8rem}
-    .mn-in a{padding:.6rem .8rem;font-size:.8rem;font-weight:500;color:#94a3b8;border-radius:.6rem;transition:all .3s}
-    .mn-in a:hover{color:#fff;background:rgba(255,255,255,.05)}
-    .mn-cta{margin-top:.4rem;text-align:center;padding:.6rem;border-radius:.6rem;font-weight:600;font-size:.8rem;color:var(--surface)}
-
-    @media(max-width:768px){
-      .dnav{display:none}
-      .mt{display:block}
-      .mn{display:block}
-    }
-
-    /* ═══════════════════════════════════════
-       HERO
-       ═══════════════════════════════════════ */
-    .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding-top:5rem}
-    .hero-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,20,.3) 0%,rgba(5,10,20,.7) 50%,var(--surface) 100%)}
-    .hero-b1{position:absolute;top:20%;left:15%;width:20rem;height:20rem;border-radius:50%;background:rgba(6,182,212,.12);filter:blur(120px)}
-    .hero-b2{position:absolute;bottom:20%;right:15%;width:16rem;height:16rem;border-radius:50%;background:rgba(16,185,129,.12);filter:blur(100px)}
-    .hero-gr{position:absolute;inset:0;opacity:.025;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:50px 50px}
-
-    .hero-c{position:relative;z-index:10;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:5rem 0}
-    .hero-t{text-align:left}
-
-    .hero-badge{display:inline-flex;align-items:center;gap:.6rem;padding:.4rem .8rem;border-radius:99px;margin-bottom:1.5rem}
-    .hero-badge svg{width:20px;height:20px;flex-shrink:0}
-    .hero-badge span{font-size:.8rem;font-weight:500;color:var(--brand-200)}
-
-    .hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4.5vw,3.5rem);font-weight:700;line-height:1.12;letter-spacing:-.02em}
-    .hero h1 .sub{display:block;font-weight:400;color:#cbd5e1;font-size:.6em;margin-top:.3em}
-
-    .hero-d{margin-top:1.2rem;max-width:32rem;font-size:clamp(.9rem,2vw,1.05rem);color:#94a3b8;line-height:1.7}
-    .hero-d strong{color:#e2e8f0;font-weight:500}
-
-    .hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
-    .btn-p{display:inline-flex;align-items:center;gap:.6rem;padding:.8rem 1.6rem;border-radius:99px;font-size:.9rem;font-weight:600;color:var(--surface);box-shadow:0 8px 32px rgba(6,182,212,.3);transition:all .3s}
-    .btn-p:hover{box-shadow:0 12px 40px rgba(34,211,238,.5);transform:scale(1.05)}
-    .btn-s{display:inline-flex;align-items:center;gap:.6rem;padding:.8rem 1.6rem;border-radius:99px;font-size:.9rem;font-weight:600;color:#fff;transition:all .3s}
-    .btn-s:hover{background:rgba(255,255,255,.1);transform:scale(1.05)}
-
-    .hero-st{margin-top:2.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:24rem}
-    .sv{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:700}
-    .sl{margin-top:.15rem;font-size:.7rem;color:#64748b}
-
-    /* Chat card */
-    .ccw{position:relative;display:block}
-    .cc-glow{position:absolute;inset:-1.5rem;border-radius:2rem;background:linear-gradient(135deg,rgba(52,211,153,.12),rgba(6,182,212,.12),rgba(34,211,238,.08));filter:blur(40px)}
-    .cc{position:relative;border-radius:1.2rem;padding:1.2rem;box-shadow:0 20px 48px rgba(5,10,20,.5)}
-    .cc-hd{display:flex;align-items:center;gap:.6rem;padding-bottom:.8rem;border-bottom:1px solid rgba(255,255,255,.05)}
-    .cc-av{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem}
-    .cc-nm{font-size:.8rem;font-weight:600}
-    .cc-st{display:flex;align-items:center;gap:.3rem;font-size:.7rem;color:#64748b}
-    .cc-dot{width:5px;height:5px;border-radius:50%;background:var(--accent-400);animation:tb 2s infinite}
-    .cc-msg{margin-top:.8rem;display:flex;flex-direction:column;gap:.6rem}
-    .mu{align-self:flex-end;max-width:80%;padding:.6rem .8rem;border-radius:.8rem .8rem .15rem .8rem;background:rgba(255,255,255,.1);font-size:.8rem;color:#e2e8f0}
-    .mb{align-self:flex-start;max-width:85%;padding:.6rem .8rem;border-radius:.8rem .8rem .8rem .15rem;background:rgba(6,182,212,.1);border:1px solid rgba(34,211,238,.2);font-size:.8rem;color:#e2e8f0}
-    .td{display:flex;gap:.2rem;margin-top:.4rem}
-    .td span{width:5px;height:5px;border-radius:50%;background:var(--brand-300);animation:tb 1.4s ease-in-out infinite}
-    .td span:nth-child(2){animation-delay:.2s}
-    .td span:nth-child(3){animation-delay:.4s}
-    .cc-inp{margin-top:.8rem;display:flex;align-items:center;gap:.4rem;padding:.4rem .4rem .4rem .8rem;border-radius:99px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05)}
-    .cc-inp span{flex:1;font-size:.8rem;color:#64748b}
-    .cc-snd{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem}
-
-    .chip{position:absolute;padding:.5rem .8rem;border-radius:.8rem;box-shadow:0 6px 24px rgba(0,0,0,.3);font-size:.75rem;font-weight:600;white-space:nowrap}
-    .c1{top:-1rem;right:-1rem;color:var(--accent-400)}
-    .c2{left:-1.5rem;top:45%;color:var(--brand-300)}
-    .c3{bottom:-1rem;right:2rem;color:#e2e8f0}
-
-    .scr{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);text-align:center}
-    .scr span{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:#64748b;margin-bottom:.4rem}
-    .scr svg{width:18px;height:18px;color:#64748b;animation:float 2s ease-in-out infinite;margin:0 auto}
-
-    @media(max-width:1024px){
-      .hero-c{grid-template-columns:1fr;text-align:center}
-      .hero-t{order:1}
-      .ccw{display:none}
-      .hero-st{margin-left:auto;margin-right:auto}
-      .hero-cta{justify-content:center}
-    }
-    @media(max-width:480px){
-      .hero{min-height:auto;padding-top:5rem;padding-bottom:4rem}
-      .hero-c{padding:3rem 0}
-      .hero-cta{flex-direction:column;align-items:center}
-      .btn-p,.btn-s{width:100%;justify-content:center}
-    }
-
-    /* ═══════════════════════════════════════
-       MARQUEE
-       ═══════════════════════════════════════ */
-    .mq{border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:2rem 0;overflow:hidden;position:relative}
-    .mq-lab{text-align:center;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:#64748b;margin-bottom:1.2rem}
-    .mq-tr{display:flex;width:max-content;animation:marquee 32s linear infinite;gap:.8rem}
-    .mq-it{display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap;padding:.5rem 1rem;border-radius:99px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);font-size:.8rem;font-weight:500;color:#cbd5e1;transition:all .3s}
-    .mq-it:hover{border-color:rgba(34,211,238,.3);color:#fff}
-    .mq-dot{width:5px;height:5px;border-radius:50%;background:linear-gradient(135deg,var(--accent-400),var(--brand-400));flex-shrink:0}
-    .mq-fl{position:absolute;top:0;bottom:0;width:6rem;z-index:2;pointer-events:none}
-    .mq-fl.l{left:0;background:linear-gradient(90deg,var(--surface),transparent)}
-    .mq-fl.r{right:0;background:linear-gradient(270deg,var(--surface),transparent)}
-
-    /* ═══════════════════════════════════════
-       SECTIONS COMMON
-       ═══════════════════════════════════════ */
-    .sep{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(34,211,238,.25),transparent)}
-    .stag{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .8rem;border-radius:99px;margin-bottom:1.2rem;font-size:.8rem;font-weight:500;color:var(--brand-300)}
-    .st{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:700;letter-spacing:-.02em}
-    .sd{margin-top:.8rem;font-size:clamp(.9rem,2vw,1.05rem);color:#94a3b8;max-width:36rem;margin-left:auto;margin-right:auto}
-
-    /* ═══════════════════════════════════════
-       FILTERS
-       ═══════════════════════════════════════ */
-    .fil{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:2.5rem}
-    .fb{padding:.5rem 1rem;border-radius:99px;font-size:.8rem;font-weight:600;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#cbd5e1;transition:all .3s;cursor:pointer}
-    .fb:hover{background:rgba(255,255,255,.08);color:#fff}
-    .fb.act{background:linear-gradient(135deg,#34d399,#06b6d4,#22d3ee);color:var(--surface);border-color:transparent;box-shadow:0 6px 24px rgba(6,182,212,.3);transform:scale(1.05)}
-
-    /* ═══════════════════════════════════════
-       ARTICLES
-       ═══════════════════════════════════════ */
-    .art-s{position:relative;padding:5rem 0 6rem;scroll-margin-top:5rem}
-    .art-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-
-    .acard{display:flex;flex-direction:column;border-radius:1rem;background:var(--surface-card);overflow:hidden;color:inherit}
-    .acard .ct{position:relative;height:8rem;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .acard .ct .em{font-size:2.5rem;transition:transform .5s;line-height:1}
-    .acard:hover .ct .em{transform:scale(1.2) rotate(8deg)}
-    .acard .ct .cr1{position:absolute;top:-2rem;right:-2rem;width:6rem;height:6rem;border-radius:50%;background:rgba(255,255,255,.04);transition:transform .7s}
-    .acard .ct .cr2{position:absolute;bottom:-1.5rem;left:-1.5rem;width:5rem;height:5rem;border-radius:50%;background:rgba(255,255,255,.04);transition:transform .7s}
-    .acard:hover .cr1,.acard:hover .cr2{transform:scale(1.4)}
-
-    .bn{position:absolute;top:.6rem;right:.6rem;padding:.2rem .6rem;border-radius:99px;background:var(--accent-500);font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--surface);box-shadow:0 6px 16px rgba(16,185,129,.3)}
-
-    .cb{flex:1;display:flex;flex-direction:column;padding:1.2rem}
-    .cc-t{display:inline-flex;align-self:flex-start;align-items:center;gap:.3rem;padding:.2rem .6rem;border-radius:99px;font-size:.7rem;font-weight:500;color:var(--brand-300);background:rgba(6,182,212,.1);border:1px solid rgba(34,211,238,.2)}
-    .c-tl{margin-top:.6rem;font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;line-height:1.35;color:#fff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:color .3s}
-    .acard:hover .c-tl{color:var(--brand-200)}
-    .c-ex{margin-top:.4rem;flex:1;font-size:.8rem;color:#94a3b8;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-    .c-lk{margin-top:.8rem;display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:500;color:var(--brand-400);transition:color .3s}
-    .acard:hover .c-lk{color:var(--brand-300)}
-    .c-lk svg{width:14px;height:14px;transition:transform .3s}
-    .acard:hover .c-lk svg{transform:translate(3px,-3px)}
-
-    .g1{background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(6,182,212,.2))}
-    .g2{background:linear-gradient(135deg,rgba(6,182,212,.2),rgba(59,130,246,.2))}
-    .g3{background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(244,63,94,.2))}
-    .g4{background:linear-gradient(135deg,rgba(168,85,247,.2),rgba(139,92,246,.2))}
-    .g5{background:linear-gradient(135deg,rgba(20,184,166,.2),rgba(132,204,22,.2))}
-    .g6{background:linear-gradient(135deg,rgba(56,189,248,.2),rgba(139,92,246,.2))}
-    .g7{background:linear-gradient(135deg,rgba(244,63,94,.2),rgba(217,70,239,.2))}
-    .g8{background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(20,184,166,.2))}
-    .g9{background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(245,158,11,.2))}
-
-    @media(max-width:1024px){.art-g{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.art-g{grid-template-columns:1fr}}
-
-    /* ═══════════════════════════════════════
-       THEMES
-       ═══════════════════════════════════════ */
-    .th-s{position:relative;padding:5rem 0 6rem;scroll-margin-top:5rem}
-    .th-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-    .tc{position:relative;border-radius:1.2rem;padding:1.5rem;transition:all .5s}
-    .tc:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(6,182,212,.14)}
-    .ti{width:3rem;height:3rem;display:flex;align-items:center;justify-content:center;border-radius:.8rem;background:rgba(5,10,20,.5);border:1px solid rgba(255,255,255,.1);font-size:1.4rem;margin-bottom:1rem;transition:transform .5s}
-    .tc:hover .ti{transform:scale(1.1) rotate(6deg)}
-    .tn{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:.5rem}
-    .tdsc{color:#94a3b8;line-height:1.7;font-size:.9rem}
-    .tb{margin-top:1.2rem;height:3px;width:3rem;border-radius:99px;transition:width .5s}
-    .tc:hover .tb{width:100%}
-
-    .tg1{background:linear-gradient(135deg,rgba(52,211,153,.12),rgba(16,185,129,.08))}
-    .tg1:hover{background:linear-gradient(135deg,rgba(52,211,153,.22),rgba(16,185,129,.15))}
-    .tg2{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(34,211,238,.08))}
-    .tg2:hover{background:linear-gradient(135deg,rgba(6,182,212,.22),rgba(34,211,238,.15))}
-    .tg3{background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(59,130,246,.08))}
-    .tg3:hover{background:linear-gradient(135deg,rgba(56,189,248,.22),rgba(59,130,246,.15))}
-
-    @media(max-width:768px){.th-g{grid-template-columns:1fr}}
-
-    /* ═══════════════════════════════════════
-       ABOUT
-       ═══════════════════════════════════════ */
-    .ab-s{position:relative;padding:5rem 0 6rem;scroll-margin-top:5rem}
-    .ab-g{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-    .ab-t h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:700;line-height:1.15}
-    .ab-t p{margin-top:1.2rem;font-size:clamp(.9rem,2vw,1.05rem);color:#94a3b8;line-height:1.7}
-    .ab-t p strong{color:#fff;font-weight:600}
-    .ab-t .sec{font-size:.9rem;color:#64748b}
-
-    .fg{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
-    .fc{padding:1.2rem;border-radius:.8rem;transition:transform .45s,box-shadow .45s}
-    .fc:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(6,182,212,.14)}
-    .fi{width:2.5rem;height:2.5rem;border-radius:.6rem;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:.8rem;transition:transform .5s}
-    .fc:hover .fi{transform:scale(1.1)}
-    .fn{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.9rem;margin-bottom:.3rem}
-    .fds{font-size:.8rem;color:#94a3b8}
-
-    .fg1{background:linear-gradient(135deg,rgba(52,211,153,.15),rgba(16,185,129,.08))}
-    .fg2{background:linear-gradient(135deg,rgba(6,182,212,.15),rgba(34,211,238,.08))}
-    .fg3{background:linear-gradient(135deg,rgba(56,189,248,.15),rgba(59,130,246,.08))}
-    .fg4{background:linear-gradient(135deg,rgba(20,184,166,.15),rgba(16,185,129,.08))}
-
-    @media(max-width:1024px){.ab-g{grid-template-columns:1fr}}
-
-    /* ═══════════════════════════════════════
-       CONTACT
-       ═══════════════════════════════════════ */
-    .co-s{position:relative;padding:5rem 0 6rem;scroll-margin-top:5rem}
-    .cf{max-width:44rem;margin:0 auto;border-radius:1.2rem;padding:1.5rem 2rem}
-    .fr{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.2rem}
-    .fg2l label{display:block;font-size:.8rem;font-weight:500;color:#cbd5e1;margin-bottom:.4rem}
-    .fg2l input,.fg2l textarea{width:100%;padding:.6rem .8rem;border-radius:.6rem;font-size:.9rem;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#fff;outline:none;transition:all .3s;font-family:inherit;resize:none}
-    .fg2l input::placeholder,.fg2l textarea::placeholder{color:#64748b}
-    .fg2l input:focus,.fg2l textarea:focus{border-color:var(--brand-400);box-shadow:0 0 0 3px rgba(34,211,238,.12)}
-    .btn-sub{display:inline-flex;align-items:center;gap:.6rem;padding:.8rem 1.6rem;border-radius:99px;font-size:.9rem;font-weight:600;color:var(--surface);box-shadow:0 8px 32px rgba(6,182,212,.25);transition:all .3s;cursor:pointer;border:none}
-    .btn-sub:hover{box-shadow:0 12px 40px rgba(34,211,238,.5);transform:scale(1.05)}
-    .fm{margin-top:.8rem;display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:.6rem;font-size:.8rem}
-    .fm.ok{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);color:var(--accent-400)}
-    .fm.err{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:#f87171}
-    @media(max-width:640px){.fr{grid-template-columns:1fr}.cf{padding:1.2rem}}
-
-    /* ═══════════════════════════════════════
-       FOOTER
-       ═══════════════════════════════════════ */
-    .ft{border-top:1px solid rgba(255,255,255,.05);padding:2.5rem 0}
-    .ft-g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
-    .ft-l{display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
-    .ft-l svg{width:32px;height:32px;border-radius:8px}
-    .ft-d{font-size:.8rem;color:#64748b;line-height:1.6}
-    .ft-cl{display:flex;gap:3rem}
-    .ft-c h4{font-family:'Space Grotesk',sans-serif;font-size:.8rem;font-weight:600;margin-bottom:.8rem}
-    .ft-c ul{list-style:none}
-    .ft-c li{margin-bottom:.4rem}
-    .ft-c a{font-size:.8rem;color:#64748b;transition:color .3s}
-    .ft-c a:hover{color:var(--brand-400)}
-    .ft-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:99px;font-size:.8rem;font-weight:500;color:var(--brand-300);border:1px solid rgba(34,211,238,.2);background:rgba(6,182,212,.1);transition:all .3s}
-    .ft-cta:hover{background:rgba(6,182,212,.2);border-color:rgba(34,211,238,.4)}
-    .ft-b{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;font-size:.7rem;color:#475569}
-    @media(max-width:768px){
-      .ft-g{grid-template-columns:1fr}
-      .ft-b{flex-direction:column;gap:.4rem;align-items:center}
-    }
-  </style>
+  <!-- ===== Google Analytics 4 (G-21029T3HX9) ===== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-21029T3HX9"></script>
+  <script src="/js/analytics.js"></script>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="hdr" id="hdr">
-    <div class="container hdr-in">
-      <a href="#" class="logo">
-        <svg viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lg)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/><circle cx="46" cy="45" r="3.2" fill="#fff" opacity=".85"/></svg>
-        <span class="logo-t">Soft<span class="at">Home</span><span class="logo-dz">DZ</span></span>
-      </a>
-      <nav class="dnav">
-        <a href="#articles" class="nl">Guides</a>
-        <a href="#themes" class="nl">Thèmes</a>
-        <a href="#apropos" class="nl">À propos</a>
-        <a href="#contact" class="nl">Contact</a>
-        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="cta-h bs ag">✨ Guide IA</a>
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/ar/" class="logo"><img class="logo-mark" src="/images/logo.svg" alt="" width="34" height="30">SoftHome<span>DZ</span></a>
+      <nav aria-label="التنقل الرئيسي">
+        <a href="#articles">المقالات</a>
+        <a href="#themes">المواضيع</a>
+        <a href="#apropos">من نحن</a>
+        <a href="#contact">اتصل بنا</a>
+        <a href="/" class="lang-switch" lang="fr" hreflang="fr">Français</a>
       </nav>
-      <button class="mt" id="mt" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mn gll" id="mn">
-      <div class="mn-in">
-        <a href="#articles">Guides</a>
-        <a href="#themes">Thèmes</a>
-        <a href="#apropos">À propos</a>
-        <a href="#contact">Contact</a>
-        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="mn-cta ag">✨ Guide IA</a>
-      </div>
     </div>
   </header>
 
   <main>
-
-    <!-- HERO -->
+    <!-- ===== HÉRO ===== -->
     <section class="hero">
-      <div class="hero-ov"></div>
-      <div class="hero-b1 af"></div>
-      <div class="hero-b2 afd"></div>
-      <div class="hero-gr"></div>
-
-      <div class="container hero-c">
-        <div class="hero-t">
-          <div class="hero-badge gll fu">
-            <svg viewBox="0 0 64 64"><defs><linearGradient id="lb" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lb)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/></svg>
-            <span>Guides IA en français — 100% pratique</span>
-          </div>
-
-          <h1 class="fu s1">
-            Maîtrisez les outils <span class="at">IA gratuits</span>
-            <span class="sub">et gagnez du temps (et de l'argent)</span>
-          </h1>
-
-          <p class="hero-d fu s2">
-            Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces.
-            <strong>Sans jargon, sans coder.</strong>
-          </p>
-
-          <div class="hero-cta fu s3">
-            <a href="#articles" class="btn-p bs ag">📚 Lire les guides</a>
-            <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-s gll">✨ Découvrir le Guide IA</a>
-          </div>
-
-          <div class="hero-st fu s4">
-            <div><div class="sv at">9+</div><div class="sl">Guides détaillés</div></div>
-            <div><div class="sv at">100%</div><div class="sl">Gratuit</div></div>
-            <div><div class="sv at">🇫🇷</div><div class="sl">En français</div></div>
-          </div>
-        </div>
-
-        <!-- Chat card -->
-        <div class="ccw fu s3">
-          <div class="cc-glow"></div>
-          <div class="cc gl gb">
-            <div class="cc-hd">
-              <div class="cc-av ag">✨</div>
-              <div>
-                <div class="cc-nm">Assistant IA</div>
-                <div class="cc-st"><span class="cc-dot"></span> En ligne</div>
-              </div>
-            </div>
-            <div class="cc-msg">
-              <div class="mu">Comment gagner du temps avec l'IA gratuitement ?</div>
-              <div class="mb">
-                Voici 5 outils gratuits, expliqués pas à pas — en français simple, sans jargon :
-                <div class="td"><span></span><span></span><span></span></div>
-              </div>
-            </div>
-            <div class="cc-inp">
-              <span>Écrivez votre question…</span>
-              <div class="cc-snd ag">➤</div>
-            </div>
-          </div>
-          <div class="chip c1 gll af">✨ 100% gratuit</div>
-          <div class="chip c2 gll afd">🇫🇷 En français</div>
-          <div class="chip c3 gll af">💡 Sans jargon</div>
-        </div>
-      </div>
-
-      <div class="scr fu s5">
-        <span>Découvrir</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-      </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <section class="mq">
-      <p class="mq-lab">Les outils que nous couvrons</p>
-      <div style="position:relative">
-        <div class="mq-fl l"></div>
-        <div class="mq-fl r"></div>
-        <div class="mq-tr">
-          <span class="mq-it"><span class="mq-dot"></span>ChatGPT</span>
-          <span class="mq-it"><span class="mq-dot"></span>Mistral Le Chat</span>
-          <span class="mq-it"><span class="mq-dot"></span>Gemini</span>
-          <span class="mq-it"><span class="mq-dot"></span>Claude</span>
-          <span class="mq-it"><span class="mq-dot"></span>DeepL</span>
-          <span class="mq-it"><span class="mq-dot"></span>Canva</span>
-          <span class="mq-it"><span class="mq-dot"></span>Microsoft Copilot</span>
-          <span class="mq-it"><span class="mq-dot"></span>Midjourney</span>
-          <span class="mq-it"><span class="mq-dot"></span>Leonardo AI</span>
-          <span class="mq-it"><span class="mq-dot"></span>Notion AI</span>
-          <span class="mq-it"><span class="mq-dot"></span>ChatGPT</span>
-          <span class="mq-it"><span class="mq-dot"></span>Mistral Le Chat</span>
-          <span class="mq-it"><span class="mq-dot"></span>Gemini</span>
-          <span class="mq-it"><span class="mq-dot"></span>Claude</span>
-          <span class="mq-it"><span class="mq-dot"></span>DeepL</span>
-          <span class="mq-it"><span class="mq-dot"></span>Canva</span>
-          <span class="mq-it"><span class="mq-dot"></span>Microsoft Copilot</span>
-          <span class="mq-it"><span class="mq-dot"></span>Midjourney</span>
-          <span class="mq-it"><span class="mq-dot"></span>Leonardo AI</span>
-          <span class="mq-it"><span class="mq-dot"></span>Notion AI</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ARTICLES -->
-    <section class="art-s" id="articles">
-      <div class="sep"></div>
-      <div class="container" style="text-align:center">
-        <div class="stag gll">📚 Derniers guides</div>
-        <h2 class="st">Apprenez l'IA <span class="at">pas à pas</span></h2>
-        <p class="sd">Des tutoriels concrets, testés et écrits en français simple. Pas de blabla, que du pratique.</p>
-
-        <div class="fil" id="fil" style="margin-top:2.5rem">
-          <button class="fb act" data-cat="all">Tous</button>
-          <button class="fb" data-cat="Argent en ligne">💰 Argent</button>
-          <button class="fb" data-cat="IA pour votre métier">🏪 Métier</button>
-          <button class="fb" data-cat="Débuter">🚀 Débuter</button>
-          <button class="fb" data-cat="Outils testés">🧰 Outils</button>
-          <button class="fb" data-cat="Créer">🎨 Créer</button>
-          <button class="fb" data-cat="Études">🎓 Études</button>
-          <button class="fb" data-cat="Emploi">💼 Emploi</button>
-        </div>
-
-        <div class="art-g" id="ag">
-          <a href="articles/gagner-argent-outils-ia-gratuits.html" class="acard ch gb" data-cat="Argent en ligne">
-            <div class="ct g1"><span class="em">💰</span><div class="cr1"></div><div class="cr2"></div><span class="bn">Nouveau</span></div>
-            <div class="cb">
-              <span class="cc-t">💰 Argent en ligne</span>
-              <h3 class="c-tl">Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes</h3>
-              <p class="c-ex">Rédaction, micro-services, création de contenu… les méthodes qui fonctionnent vraiment en 2026, sans investissement de départ.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/ia-petits-commerces.html" class="acard ch gb" data-cat="IA pour votre métier">
-            <div class="ct g2"><span class="em">🏪</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">🏪 IA pour votre métier</span>
-              <h3 class="c-tl">L'IA pour les petits commerces : 7 usages concrets et gratuits</h3>
-              <p class="c-ex">Répondre aux clients, créer vos publications, gérer votre stock d'idées : comment un petit commerce utilise l'IA sans budget.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/chatgpt-guide-debutant.html" class="acard ch gb" data-cat="Débuter">
-            <div class="ct g3"><span class="em">🚀</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">🚀 Débuter</span>
-              <h3 class="c-tl">ChatGPT gratuit en français : le guide du vrai débutant</h3>
-              <p class="c-ex">Créer un compte, écrire sa première demande, éviter les pièges : tout ce qu'il faut savoir pour bien démarrer avec l'IA.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/prompts-chatgpt-exemples.html" class="acard ch gb" data-cat="Débuter">
-            <div class="ct g4"><span class="em">✍️</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">✍️ Débuter</span>
-              <h3 class="c-tl">30 prompts ChatGPT prêts à copier</h3>
-              <p class="c-ex">Rédaction, travail, commerce, études, traduction : 30 formulations à copier-coller, plus la méthode pour écrire les vôtres.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/meilleurs-outils-ia-gratuits.html" class="acard ch gb" data-cat="Outils testés">
-            <div class="ct g5"><span class="em">🧰</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">🧰 Outils testés</span>
-              <h3 class="c-tl">Meilleurs outils IA gratuits en 2026 : le comparatif honnête</h3>
-              <p class="c-ex">ChatGPT, Mistral Le Chat, Gemini, Claude, DeepL, Canva : lequel choisir selon votre besoin réel, et les vraies limites du gratuit.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/creer-images-ia-gratuit.html" class="acard ch gb" data-cat="Créer">
-            <div class="ct g6"><span class="em">🎨</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">🎨 Créer</span>
-              <h3 class="c-tl">Créer des images avec l'IA gratuitement</h3>
-              <p class="c-ex">La recette d'une bonne description en 5 éléments, les erreurs qui gâchent tout, et ce qu'il faut savoir sur les droits d'utilisation.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/ia-pour-etudiants.html" class="acard ch gb" data-cat="Études">
-            <div class="ct g7"><span class="em">🎓</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">🎓 Études</span>
-              <h3 class="c-tl">L'IA pour les étudiants : réviser, résumer, rédiger</h3>
-              <p class="c-ex">Fiches de révision, interrogation active, plans de dissertation : l'IA comme répétiteur — sans tricher, et sans se mentir.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/ia-pour-instagram.html" class="acard ch gb" data-cat="IA pour votre métier">
-            <div class="ct g8"><span class="em">📸</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">📸 IA pour votre métier</span>
-              <h3 class="c-tl">L'IA pour Instagram : légendes, visuels et hashtags</h3>
-              <p class="c-ex">Écrire vos légendes, choisir vos hashtags, tenir un calendrier : faire vivre votre page sans y passer vos soirées.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-          <a href="articles/rediger-cv-avec-ia.html" class="acard ch gb" data-cat="Emploi">
-            <div class="ct g9"><span class="em">💼</span><div class="cr1"></div><div class="cr2"></div></div>
-            <div class="cb">
-              <span class="cc-t">💼 Emploi</span>
-              <h3 class="c-tl">Rédiger un CV avec l'IA : le guide honnête</h3>
-              <p class="c-ex">Transformer les tâches en résultats, adapter le CV à chaque offre, préparer l'entretien — sans jamais mentir.</p>
-              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- THEMES -->
-    <section class="th-s" id="themes">
-      <div class="sep"></div>
-      <div class="container" style="text-align:center">
-        <div class="stag gll">🎯 Nos thèmes</div>
-        <h2 class="st">Explorez par <span class="at">thématique</span></h2>
-        <p class="sd">Trouvez le contenu adapté à votre situation : freelance, étudiant, commerçant ou curieux.</p>
-
-        <div class="th-g" style="margin-top:2.5rem;text-align:left">
-          <div class="tc tg1 gb">
-            <div class="ti">💰</div>
-            <h3 class="tn fd">Gagner de l'argent avec l'IA</h3>
-            <p class="tdsc">Méthodes réalistes pour générer un revenu en ligne grâce aux outils IA gratuits : freelancing, contenu, micro-services.</p>
-            <div class="tb ag"></div>
-          </div>
-          <div class="tc tg2 gb">
-            <div class="ti">🏪</div>
-            <h3 class="tn fd">L'IA pour votre métier</h3>
-            <p class="tdsc">Commerçants, freelances, immobilier, étudiants : des usages concrets de l'IA adaptés à votre activité quotidienne.</p>
-            <div class="tb ag"></div>
-          </div>
-          <div class="tc tg3 gb">
-            <div class="ti">🧰</div>
-            <h3 class="tn fd">Outils IA gratuits testés</h3>
-            <p class="tdsc">Comparatifs et tests honnêtes des meilleurs outils gratuits : ChatGPT, Mistral Le Chat, DeepL, générateurs d'images…</p>
-            <div class="tb ag"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- A PROPOS -->
-    <section class="ab-s" id="apropos">
-      <div class="sep"></div>
       <div class="container">
-        <div class="ab-g">
-          <div class="ab-t">
-            <div class="stag gll">ℹ️ À propos</div>
-            <h2>L'IA accessible <span class="at">à tous</span></h2>
-            <p>SoftHome DZ est un site francophone dédié à l'intelligence artificielle <strong>pratique</strong>. Notre mission : rendre les outils IA accessibles à tous — sans jargon technique, sans anglais obligatoire, et en privilégiant les outils <strong>gratuits</strong>.</p>
-            <p class="sec">Que vous soyez freelance, étudiant, commerçant ou simplement curieux, vous trouverez ici des guides pas à pas testés réellement, pensés pour le public francophone d'Algérie, du Maghreb, de France et d'ailleurs. Pas de promesses miracles : uniquement des méthodes concrètes qui font gagner du temps et, souvent, de l'argent.</p>
-          </div>
-          <div class="fg">
-            <div class="fc gll">
-              <div class="fi fg1">❤️</div>
-              <div class="fn fd">Sans jargon</div>
-              <p class="fds">Tout est expliqué en français simple, pas besoin d'être développeur.</p>
-            </div>
-            <div class="fc gll">
-              <div class="fi fg2">⚡</div>
-              <div class="fn fd">100% gratuit</div>
-              <p class="fds">On privilégie les outils gratuits, pas de dépenses cachées.</p>
-            </div>
-            <div class="fc gll">
-              <div class="fi fg3">🌍</div>
-              <div class="fn fd">Francophone</div>
-              <p class="fds">Pour l'Algérie, le Maghreb, la France et tous les francophones.</p>
-            </div>
-            <div class="fc gll">
-              <div class="fi fg4">✅</div>
-              <div class="fn fd">Testé réellement</div>
-              <p class="fds">Chaque guide est vérifié avec de vrais exemples concrets.</p>
-            </div>
-          </div>
+        <p class="hero-badge">🤖 أدلة الذكاء الاصطناعي بالعربية — عملية 100%</p>
+        <h1>أتقن أدوات الذكاء الاصطناعي المجانية واربح الوقت (والمال)</h1>
+        <p class="hero-sub">دروس خطوة بخطوة بالعربية البسيطة: ChatGPT، أدوات الذكاء الاصطناعي المجانية، الإنتاجية للمستقلين والطلاب وأصحاب المحلات. بدون تعقيد، بدون برمجة.</p>
+        <a href="#articles" class="btn">اقرأ الأدلة</a>
+        <img class="hero-img" fetchpriority="high" src="../images/hero-ia.svg" alt="شبكة عصبية ترمز إلى الذكاء الاصطناعي" width="800" height="500">
+      </div>
+    </section>
+
+    <!-- ===== ARTICLES ===== -->
+    <section id="articles" class="section">
+      <div class="container">
+        <h2>أحدث الأدلة</h2>
+        <div class="grid">
+          <article class="card">
+            <img class="card-img" src="../images/argent-ia.svg" alt="قطع نقدية ودوائر إلكترونية: ربح المال بالذكاء الاصطناعي" width="800" height="500" loading="lazy">
+            <p class="card-tag">💰 الربح من الإنترنت</p>
+            <h3><a href="articles/rebh-elmal-adawat-ia.html">اربح المال عبر الإنترنت بأدوات الذكاء الاصطناعي المجانية: 5 طرق واقعية</a></h3>
+            <p>الكتابة، الخدمات المصغّرة، صناعة المحتوى… الطرق التي تنجح فعلاً في 2026، بدون رأس مال.</p>
+            <a class="card-link" href="articles/rebh-elmal-adawat-ia.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/commerce-ia.svg" alt="محل تجاري صغير متصل بالذكاء الاصطناعي" width="800" height="500" loading="lazy">
+            <p class="card-tag">🏪 الذكاء الاصطناعي لمهنتك</p>
+            <h3><a href="articles/ia-mahallat-tijaria.html">الذكاء الاصطناعي للمحلات التجارية الصغيرة: 7 استخدامات عملية ومجانية</a></h3>
+            <p>الرد على الزبائن، إنشاء المنشورات، كتابة العروض: كيف يستعمل محل صغير الذكاء الاصطناعي بدون ميزانية.</p>
+            <a class="card-link" href="articles/ia-mahallat-tijaria.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/chatgpt-debutant.svg" alt="محادثة مع مساعد ذكاء اصطناعي على الهاتف" width="800" height="500" loading="lazy">
+            <p class="card-tag">🚀 ابدأ من الصفر</p>
+            <h3><a href="articles/chatgpt-dalil-mobtadi.html">ChatGPT مجاناً بالعربية: دليل المبتدئ الحقيقي</a></h3>
+            <p>إنشاء حساب، كتابة أول طلب، تجنّب الأخطاء: كل ما تحتاجه لتبدأ مع الذكاء الاصطناعي بثقة.</p>
+            <a class="card-link" href="articles/chatgpt-dalil-mobtadi.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/prompts-chatgpt.svg" alt="بطاقات برومبتات ChatGPT جاهزة للنسخ" width="800" height="500" loading="lazy">
+            <p class="card-tag">✍️ ابدأ من الصفر</p>
+            <h3><a href="articles/promptat-chatgpt.html">30 برومبت ChatGPT جاهز للنسخ</a></h3>
+            <p>الكتابة، العمل، التجارة، الدراسة، الترجمة: 30 صيغة جاهزة للنسخ واللصق، مع طريقة كتابة برومبتاتك الخاصة.</p>
+            <a class="card-link" href="articles/promptat-chatgpt.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/outils-ia-gratuits.svg" alt="مقارنة أفضل أدوات الذكاء الاصطناعي المجانية" width="800" height="500" loading="lazy">
+            <p class="card-tag">🧰 أدوات مُجرَّبة</p>
+            <h3><a href="articles/afdal-adawat-ia-majania.html">أفضل أدوات الذكاء الاصطناعي المجانية في 2026: مقارنة صادقة</a></h3>
+            <p>ChatGPT، Mistral Le Chat، Gemini، Claude، DeepL، Canva: أيها تختار حسب حاجتك الحقيقية، وما هي حدود المجاني.</p>
+            <a class="card-link" href="articles/afdal-adawat-ia-majania.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/images-ia.svg" alt="توليد صورة بالذكاء الاصطناعي انطلاقاً من جملة" width="800" height="500" loading="lazy">
+            <p class="card-tag">🎨 اصنع</p>
+            <h3><a href="articles/insha-suwar-bil-ia.html">إنشاء الصور بالذكاء الاصطناعي مجاناً</a></h3>
+            <p>وصفة الوصف الجيد في 5 عناصر، الأخطاء التي تُفسد كل شيء، وما يجب معرفته عن حقوق الاستعمال.</p>
+            <a class="card-link" href="articles/insha-suwar-bil-ia.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/ia-etudiants.svg" alt="طالب يستعمل الذكاء الاصطناعي لتلخيص دروسه ومراجعتها" width="800" height="500" loading="lazy">
+            <p class="card-tag">🎓 الدراسة</p>
+            <h3><a href="articles/ia-lil-tullab.html">الذكاء الاصطناعي للطلبة: المراجعة والتلخيص والكتابة</a></h3>
+            <p>بطاقات المراجعة، الاختبار النشط، مخططات البحوث: الذكاء الاصطناعي كمدرّس خصوصي — دون غش، ودون خداع النفس.</p>
+            <a class="card-link" href="articles/ia-lil-tullab.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/instagram-ia.svg" alt="منشور إنستغرام أُنشئ بمساعدة الذكاء الاصطناعي" width="800" height="500" loading="lazy">
+            <p class="card-tag">📸 الذكاء الاصطناعي لمهنتك</p>
+            <h3><a href="articles/ia-lil-instagram.html">الذكاء الاصطناعي لإنستغرام: التعليقات والصور والهاشتاغات</a></h3>
+            <p>كتابة التعليقات، اختيار الهاشتاغات، تنظيم الرزنامة: أدر صفحتك دون أن تضيّع سهراتك.</p>
+            <a class="card-link" href="articles/ia-lil-instagram.html">اقرأ الدليل ←</a>
+          </article>
+          <article class="card">
+            <img class="card-img" src="../images/cv-ia.svg" alt="سيرة ذاتية محسّنة بمساعدة الذكاء الاصطناعي" width="800" height="500" loading="lazy">
+            <p class="card-tag">💼 التوظيف</p>
+            <h3><a href="articles/sira-datia-bil-ia.html">كتابة السيرة الذاتية بالذكاء الاصطناعي: الدليل الصادق</a></h3>
+            <p>تحويل المهام إلى نتائج، تكييف السيرة مع كل عرض، التحضير للمقابلة — دون كذب أبداً.</p>
+            <a class="card-link" href="articles/sira-datia-bil-ia.html">اقرأ الدليل ←</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="co-s" id="contact">
-      <div class="sep"></div>
-      <div class="container" style="text-align:center">
-        <div class="stag gll">✉️ Contact</div>
-        <h2 class="st">Une question ? <span class="at">Écrivez-nous</span></h2>
-        <p class="sd">Nous répondons à toutes les questions sur l'IA en français.</p>
+    <!-- ===== THÈMES ===== -->
+    <section id="themes" class="section section-alt">
+      <div class="container">
+        <h2>مواضيعنا</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>💰 الربح بالذكاء الاصطناعي</h3>
+            <p>طرق واقعية لتحقيق دخل عبر الإنترنت بفضل الأدوات المجانية: العمل الحر، المحتوى، الخدمات المصغّرة.</p>
+          </article>
+          <article class="card">
+            <h3>🏪 الذكاء الاصطناعي لمهنتك</h3>
+            <p>تجّار، مستقلون، عقارات، طلاب: استخدامات عملية للذكاء الاصطناعي تناسب نشاطك اليومي.</p>
+          </article>
+          <article class="card">
+            <h3>🧰 أدوات مجانية مجرّبة</h3>
+            <p>مقارنات وتجارب صادقة لأفضل الأدوات المجانية: ChatGPT، Mistral Le Chat، DeepL، مولّدات الصور…</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <form class="cf gll" id="cf" style="margin-top:2.5rem;text-align:left">
-          <div class="fr">
-            <div class="fg2l">
-              <label for="name">Nom</label>
-              <input id="name" name="name" required placeholder="Votre nom">
-            </div>
-            <div class="fg2l">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required placeholder="votre@email.com">
-            </div>
-          </div>
-          <div class="fg2l" style="margin-bottom:1.2rem">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required rows="5" placeholder="Votre message..."></textarea>
-          </div>
-          <button type="submit" class="btn-sub bs ag">✉️ Envoyer le message</button>
-          <div id="ff"></div>
-        </form>
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2>من نحن — SoftHome DZ</h2>
+        <p>SoftHome DZ موقع مخصص للذكاء الاصطناعي <strong>العملي</strong> باللغتين العربية والفرنسية. مهمتنا: جعل أدوات الذكاء الاصطناعي في متناول الجميع — بدون مصطلحات معقدة، وبدون الحاجة إلى الإنجليزية، مع التركيز على الأدوات <strong>المجانية</strong>.</p>
+        <p>سواء كنت مستقلاً، طالباً، تاجراً أو مجرد فضولي، ستجد هنا أدلة خطوة بخطوة مجرّبة فعلاً، موجهة للجمهور في الجزائر والمغرب العربي وكل الناطقين بالعربية والفرنسية. لا وعود خيالية: فقط طرق عملية توفر الوقت، وغالباً المال أيضاً.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>اتصل بنا</h2>
+        <p>سؤال، اقتراح مقال، أو شراكة؟</p>
+        <p>البريد الإلكتروني: <a href="/cdn-cgi/l/email-protection#81e2eeeff5e0e2f5c1f2eee7f5e9eeece4e5fbafe2eeec"><span class="__cf_email__" data-cfemail="e98a86879d888a9da99a868f9d8186848c8d93c78a8684">[email&#160;protected]</span></a></p>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="ft">
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="ft-g">
-        <div>
-          <a href="#" class="ft-l">
-            <svg viewBox="0 0 64 64"><defs><linearGradient id="lf" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lf)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/><circle cx="46" cy="45" r="3.2" fill="#fff" opacity=".85"/></svg>
-            <span class="logo-t" style="font-size:1rem">Soft<span class="at">Home</span><span class="logo-dz">DZ</span></span>
-          </a>
-          <p class="ft-d">L'IA pratique en français.<br>Guides, tutoriels et outils gratuits.</p>
-        </div>
-        <div class="ft-cl">
-          <div class="ft-c">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="#articles">Guides</a></li>
-              <li><a href="#themes">Thèmes</a></li>
-              <li><a href="#apropos">À propos</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="ft-c">
-            <h4>Ressources</h4>
-            <ul>
-              <li><a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer">Guide IA</a></li>
-              <li><a href="https://www.softhomedz.com" target="_blank" rel="noopener noreferrer">Site principal</a></li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div class="ft-c"><h4>Restez informé</h4></div>
-          <p class="ft-d" style="margin-bottom:.8rem">Suivez nos derniers guides IA directement sur le site.</p>
-          <a href="#articles" class="ft-cta">Voir les guides →</a>
-        </div>
-      </div>
-      <div class="ft-b">
-        <p>© 2026 SoftHome DZ. Tous droits réservés.</p>
-        <p>Fait avec ❤️ pour la communauté francophone</p>
-      </div>
+      <p>&copy; 2026 SoftHome DZ — softhomedz.com. جميع الحقوق محفوظة.</p>
+      <p class="footer-links"><a href="#articles">المقالات</a> · <a href="#apropos">من نحن</a> · <a href="#contact">اتصل بنا</a> · <a href="/confidentialite.html" lang="fr">Confidentialité</a> · <a href="/" lang="fr">Version française</a> · <a href="https://www.facebook.com/softhomedz" target="_blank" rel="noopener">فيسبوك</a> · <a href="https://www.instagram.com/1001softhomedz" target="_blank" rel="noopener">إنستغرام</a></p>
     </div>
   </footer>
 
-  <script>
-    // Header scroll
-    var h=document.getElementById('hdr');
-    window.addEventListener('scroll',function(){h.classList.toggle('sc',window.scrollY>40)},{passive:true});
-
-    // Mobile menu
-    var t=document.getElementById('mt'),m=document.getElementById('mn');
-    t.addEventListener('click',function(){m.classList.toggle('open')});
-    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
-
-    // Filters
-    var fb=document.querySelectorAll('.fb'),cards=document.querySelectorAll('.acard');
-    fb.forEach(function(b){
-      b.addEventListener('click',function(){
-        fb.forEach(function(x){x.classList.remove('act')});
-        b.classList.add('act');
-        var c=b.dataset.cat;
-        cards.forEach(function(card){
-          card.style.display=(c==='all'||card.dataset.cat===c)?'':'none';
-        });
-      });
-    });
-
-    // Contact form
-    var f=document.getElementById('cf'),ff=document.getElementById('ff');
-    f.addEventListener('submit',function(e){
-      e.preventDefault();
-      ff.innerHTML='<div class="fm ok">✅ Message envoyé avec succès ! Merci pour votre intérêt.</div>';
-      f.reset();
-      setTimeout(function(){ff.innerHTML=''},5000);
-    });
-  </script>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2a649640bbe76a6',t:'MTc4NjYwOTA4MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
