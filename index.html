@@ -1,235 +1,502 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- ===== BASE TECHNIQUE ===== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ===== FAVICON ===== -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <title>SoftHome DZ — Outils IA gratuits &amp; Productivité en français</title>
+  <meta name="description" content="Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces. Sans jargon, sans coder.">
+  <meta property="og:title" content="SoftHome DZ — Outils IA gratuits & Productivité en français">
+  <meta property="og:description" content="Guides IA en français — 100% pratique. Maîtrisez les outils IA gratuits et gagnez du temps.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050a14">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Google Search Console : 2e méthode de validation (la 1re est l'enregistrement DNS TXT) -->
-  <meta name="google-site-verification" content="7ucEFiwj-k3qMWLTwqrlcaJf5t6eIq1qHQh6Vf9A56g">
-
-  <!-- ===== SEO ===== -->
-  <title>Outils IA gratuits & Productivité — Guides en français | SoftHome DZ</title>
-  <meta name="description" content="Tutoriels IA en français simple : gagner de l'argent en ligne avec les outils IA gratuits, ChatGPT, productivité pour freelances et petits commerces. Guides pas à pas.">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://softhomedz.com/">
-
-  <!-- ===== HREFLANG (versions linguistiques FR/AR) ===== -->
   <link rel="alternate" hreflang="fr" href="https://softhomedz.com/">
   <link rel="alternate" hreflang="ar" href="https://softhomedz.com/ar/">
   <link rel="alternate" hreflang="x-default" href="https://softhomedz.com/">
-
-  <!-- ===== OPEN GRAPH (partage réseaux sociaux) ===== -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="SoftHome DZ — Outils IA gratuits & Productivité en français">
-  <meta property="og:description" content="Guides pratiques en français : gagner de l'argent avec les outils IA gratuits, ChatGPT pour votre métier, productivité freelance.">
-  <!-- Image de partage sociale 1200x630 (Open Graph / Twitter) -->
-  <meta property="og:image" content="https://softhomedz.com/images/og-image.jpg">
+  <meta property="og:url" content="https://softhomedz.com/">
+  <meta property="og:image" content="https://softhomedz.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="SoftHome DZ — Outils IA gratuits et Productivité en français">
-  <meta property="og:url" content="https://softhomedz.com/">
-  <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="SoftHome DZ">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://softhomedz.com/images/og-image.jpg">
+  <meta name="twitter:title" content="SoftHome DZ — Outils IA gratuits & Productivité en français">
+  <meta name="twitter:description" content="Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité. Sans jargon, sans coder.">
+  <meta name="twitter:image" content="https://softhomedz.com/og-image.jpg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-21029T3HX9"></script>
+  <script src="/js/analytics.js"></script>
 
-  <!-- ===== DONNÉES STRUCTURÉES JSON-LD ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "SoftHome DZ",
-    "url": "https://softhomedz.com/",
-    "description": "Guides en français sur les outils IA gratuits et la productivité : gagner de l'argent en ligne, IA pour freelances et petits commerces.",
-    "inLanguage": "fr",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SoftHome DZ",
-      "url": "https://softhomedz.com/",
-      "sameAs": ["https://www.facebook.com/softhomedz", "https://www.instagram.com/1001softhomedz"]
-    }
+    "@graph": [
+      {"@type":"WebSite","@id":"https://softhomedz.com/#website","url":"https://softhomedz.com/","name":"SoftHome DZ","description":"Guides IA en français — 100% pratique","inLanguage":"fr"},
+      {"@type":"Organization","@id":"https://softhomedz.com/#organization","name":"SoftHome DZ","url":"https://softhomedz.com/","logo":"https://softhomedz.com/favicon.svg"},
+      {"@type":"ItemList","name":"Guides IA","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes","url":"https://softhomedz.com/articles/gagner-argent-outils-ia-gratuits.html"},
+        {"@type":"ListItem","position":2,"name":"L'IA pour les petits commerces : 7 usages concrets et gratuits","url":"https://softhomedz.com/articles/ia-petits-commerces.html"},
+        {"@type":"ListItem","position":3,"name":"ChatGPT gratuit en français : le guide du vrai débutant","url":"https://softhomedz.com/articles/chatgpt-guide-debutant.html"},
+        {"@type":"ListItem","position":4,"name":"30 prompts ChatGPT prêts à copier","url":"https://softhomedz.com/articles/prompts-chatgpt-exemples.html"},
+        {"@type":"ListItem","position":5,"name":"Meilleurs outils IA gratuits en 2026 : le comparatif honnête","url":"https://softhomedz.com/articles/meilleurs-outils-ia-gratuits.html"},
+        {"@type":"ListItem","position":6,"name":"Créer des images avec l'IA gratuitement","url":"https://softhomedz.com/articles/creer-images-ia-gratuit.html"},
+        {"@type":"ListItem","position":7,"name":"L'IA pour les étudiants : réviser, résumer, rédiger","url":"https://softhomedz.com/articles/ia-pour-etudiants.html"},
+        {"@type":"ListItem","position":8,"name":"L'IA pour Instagram : légendes, visuels et hashtags","url":"https://softhomedz.com/articles/ia-pour-instagram.html"},
+        {"@type":"ListItem","position":9,"name":"Rédiger un CV avec l'IA : le guide honnête","url":"https://softhomedz.com/articles/rediger-cv-avec-ia.html"}
+      ]}
+    ]
   }
   </script>
+  <!-- Polices Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Preload de l'image LCP (hero) : le navigateur la récupère au plus tôt -->
-  <link rel="preload" as="image" href="images/hero-ia.svg" fetchpriority="high">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- ===== Google Analytics 4 (G-21029T3HX9) ===== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-21029T3HX9"></script>
-  <script src="/js/analytics.js"></script>
+    <link rel="stylesheet" href="/home.css?v=20260813">
 </head>
 
 <body>
-<!-- Bouton Guide IA & SEO Local Algérie -->
-<div class="banner-guide-ia">
-  <a href="https://ia.softhomedz.com" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-guide-ia-banner">
-    🚀 Découvrir le Guide IA & SEO Local Algérie
-  </a>
-</div>
-  <!-- ===== EN-TÊTE + NAVIGATION ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo"><img class="logo-mark" src="/images/logo.svg" alt="" width="34" height="30">SoftHome<span>DZ</span></a>
-      <nav aria-label="Navigation principale">
-        <a href="#articles">Articles</a>
+  <a href="#contenu" class="skip-link">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="hdr" id="hdr">
+    <div class="container hdr-in">
+      <a href="/" class="logo" aria-label="SoftHome DZ — Accueil">
+        <svg viewBox="0 0 512 448" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><circle cx="256" cy="48" r="24" fill="#ef4444"/><rect x="247" y="64" width="18" height="48" rx="9" fill="#06b6d4"/><rect x="62" y="196" width="34" height="88" rx="17" fill="#0e7490"/><rect x="416" y="196" width="34" height="88" rx="17" fill="#0e7490"/><rect x="96" y="104" width="320" height="272" rx="76" fill="url(#lg)"/><rect x="136" y="148" width="240" height="184" rx="48" fill="#050a14"/><circle cx="204" cy="228" r="26" fill="#fff"/><circle cx="308" cy="228" r="26" fill="#fff"/><circle cx="204" cy="228" r="11" fill="#0891b2"/><circle cx="308" cy="228" r="11" fill="#0891b2"/><path d="M 212 288 Q 256 318 300 288" stroke="#67e8f9" stroke-width="14" stroke-linecap="round" fill="none"/></svg>
+        <span class="logo-t">Soft<span class="at">Home</span><span class="logo-dz">DZ</span></span>
+      </a>
+      <nav class="dnav">
+        <a href="#articles" class="nl">Guides</a>
+        <a href="#themes" class="nl">Thèmes</a>
+        <a href="#apropos" class="nl">À propos</a>
+        <a href="#contact" class="nl">Contact</a>
+        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="cta-h bs ag">✨ Guide IA</a>
+      </nav>
+      <button class="mt" id="mt" aria-label="Menu" aria-expanded="false" aria-controls="mn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mn gll" id="mn">
+      <div class="mn-in">
+        <a href="#articles">Guides</a>
         <a href="#themes">Thèmes</a>
         <a href="#apropos">À propos</a>
-       <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer">🤖 Guide IA</a>
         <a href="#contact">Contact</a>
-        <a href="/ar/" class="lang-switch" lang="ar" hreflang="ar">العربية</a>
-      </nav>
+        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="mn-cta ag">✨ Guide IA</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- ===== HÉRO ===== -->
+  <main id="contenu">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <p class="hero-badge">🤖 Guides IA en français — 100% pratique</p>
-        <h1>Maîtrisez les outils IA gratuits et gagnez du temps (et de l'argent)</h1>
-        <p class="hero-sub">Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces. Sans jargon, sans coder.</p>
-        <a href="#articles" class="btn">Lire les guides</a>
-        <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-guide-ia-hero">🚀 Découvrir le Guide IA</a>
-        <img class="hero-img" fetchpriority="high" src="images/hero-ia.svg" alt="Réseau de neurones illustrant l'intelligence artificielle" width="800" height="500">
+      <div class="hero-ov"></div>
+      <div class="hero-b1 af"></div>
+      <div class="hero-b2 afd"></div>
+      <div class="hero-gr"></div>
+
+      <div class="container hero-c">
+        <div class="hero-t">
+          <div class="hero-badge gll fu">
+            <svg viewBox="0 0 64 64"><defs><linearGradient id="lb" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lb)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/></svg>
+            <span>Guides IA en français — 100% pratique</span>
+          </div>
+
+          <h1 class="fu s1">
+            Maîtrisez les outils <span class="at">IA gratuits</span>
+            <span class="sub">et gagnez du temps (et de l'argent)</span>
+          </h1>
+
+          <p class="hero-d fu s2">
+            Tutoriels pas à pas en français simple : ChatGPT, outils IA gratuits, productivité pour freelances, étudiants et petits commerces.
+            <strong>Sans jargon, sans coder.</strong>
+          </p>
+
+          <div class="hero-cta fu s3">
+            <a href="#articles" class="btn-p bs ag">📚 Lire les guides</a>
+            <a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer" class="btn-s gll">✨ Découvrir le Guide IA</a>
+          </div>
+
+          <div class="hero-st fu s4">
+            <div><div class="sv at">9+</div><div class="sl">Guides détaillés</div></div>
+            <div><div class="sv at">100%</div><div class="sl">Gratuit</div></div>
+            <div><div class="sv at">🇫🇷</div><div class="sl">En français</div></div>
+          </div>
+        </div>
+
+        <!-- Chat card -->
+        <a href="https://ia.softhomedz.com/" class="ccw fu s3" aria-label="Ouvrir le Guide IA gratuit — ia.softhomedz.com">
+          <div class="cc-glow"></div>
+          <div class="cc gl gb">
+            <div class="cc-hd">
+              <div class="cc-av ag">✨</div>
+              <div>
+                <div class="cc-nm">Assistant IA</div>
+                <div class="cc-st"><span class="cc-dot"></span> En ligne</div>
+              </div>
+            </div>
+            <div class="cc-msg">
+              <div class="mu">Comment gagner du temps avec l'IA gratuitement ?</div>
+              <div class="mb">
+                Voici 5 outils gratuits, expliqués pas à pas — en français simple, sans jargon :
+                <div class="td"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="cc-inp">
+              <span>Écrivez votre question…</span>
+              <div class="cc-snd ag">➤</div>
+            </div>
+          </div>
+          <div class="chip c1 gll af">✨ 100% gratuit</div>
+          <div class="chip c2 gll afd">🇫🇷 En français</div>
+          <div class="chip c3 gll af">💡 Sans jargon</div>
+        </div>
+      </a>
+
+      <div class="scr fu s5">
+        <span>Découvrir</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
       </div>
     </section>
 
-    <!-- ===== ARTICLES ===== -->
-    <section id="articles" class="section">
-      <div class="container">
-        <h2>Derniers guides</h2>
-        <div class="grid">
-          <article class="card">
-            <img class="card-img" src="images/argent-ia.svg" alt="Pièces de monnaie et circuits électroniques : gagner de l'argent avec l'IA" width="800" height="500" loading="lazy">
-            <p class="card-tag">💰 Argent en ligne</p>
-            <h3><a href="articles/gagner-argent-outils-ia-gratuits.html">Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes</a></h3>
-            <p>Rédaction, micro-services, création de contenu… les méthodes qui fonctionnent vraiment en 2026, sans investissement de départ.</p>
-            <a class="card-link" href="articles/gagner-argent-outils-ia-gratuits.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/commerce-ia.svg" alt="Boutique de petit commerce connectée à l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">🏪 IA pour votre métier</p>
-            <h3><a href="articles/ia-petits-commerces.html">L'IA pour les petits commerces : 7 usages concrets et gratuits</a></h3>
-            <p>Répondre aux clients, créer vos publications, gérer votre stock d'idées : comment un petit commerce utilise l'IA sans budget.</p>
-            <a class="card-link" href="articles/ia-petits-commerces.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/chatgpt-debutant.svg" alt="Conversation avec un assistant IA sur un téléphone" width="800" height="500" loading="lazy">
-            <p class="card-tag">🚀 Débuter</p>
-            <h3><a href="articles/chatgpt-guide-debutant.html">ChatGPT gratuit en français : le guide du vrai débutant</a></h3>
-            <p>Créer un compte, écrire sa première demande, éviter les pièges : tout ce qu'il faut savoir pour bien démarrer avec l'IA.</p>
-            <a class="card-link" href="articles/chatgpt-guide-debutant.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/prompts-chatgpt.svg" alt="Fiches de prompts ChatGPT prêts à copier" width="800" height="500" loading="lazy">
-            <p class="card-tag">✍️ Débuter</p>
-            <h3><a href="articles/prompts-chatgpt-exemples.html">30 prompts ChatGPT prêts à copier</a></h3>
-            <p>Rédaction, travail, commerce, études, traduction : 30 formulations à copier-coller, plus la méthode pour écrire les vôtres.</p>
-            <a class="card-link" href="articles/prompts-chatgpt-exemples.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/outils-ia-gratuits.svg" alt="Comparatif des meilleurs outils IA gratuits" width="800" height="500" loading="lazy">
-            <p class="card-tag">🧰 Outils testés</p>
-            <h3><a href="articles/meilleurs-outils-ia-gratuits.html">Meilleurs outils IA gratuits en 2026 : le comparatif honnête</a></h3>
-            <p>ChatGPT, Mistral Le Chat, Gemini, Claude, DeepL, Canva : lequel choisir selon votre besoin réel, et les vraies limites du gratuit.</p>
-            <a class="card-link" href="articles/meilleurs-outils-ia-gratuits.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/images-ia.svg" alt="Génération d'une image par intelligence artificielle à partir d'une phrase" width="800" height="500" loading="lazy">
-            <p class="card-tag">🎨 Créer</p>
-            <h3><a href="articles/creer-images-ia-gratuit.html">Créer des images avec l'IA gratuitement</a></h3>
-            <p>La recette d'une bonne description en 5 éléments, les erreurs qui gâchent tout, et ce qu'il faut savoir sur les droits d'utilisation.</p>
-            <a class="card-link" href="articles/creer-images-ia-gratuit.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/ia-etudiants.svg" alt="Étudiant utilisant l'IA pour résumer et réviser ses cours" width="800" height="500" loading="lazy">
-            <p class="card-tag">🎓 Études</p>
-            <h3><a href="articles/ia-pour-etudiants.html">L'IA pour les étudiants : réviser, résumer, rédiger</a></h3>
-            <p>Fiches de révision, interrogation active, plans de dissertation : l'IA comme répétiteur — sans tricher, et sans se mentir.</p>
-            <a class="card-link" href="articles/ia-pour-etudiants.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/instagram-ia.svg" alt="Publication Instagram créée avec l'aide de l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">📸 IA pour votre métier</p>
-            <h3><a href="articles/ia-pour-instagram.html">L'IA pour Instagram : légendes, visuels et hashtags</a></h3>
-            <p>Écrire vos légendes, choisir vos hashtags, tenir un calendrier : faire vivre votre page sans y passer vos soirées.</p>
-            <a class="card-link" href="articles/ia-pour-instagram.html">Lire le guide →</a>
-          </article>
-          <article class="card">
-            <img class="card-img" src="images/cv-ia.svg" alt="CV amélioré avec l'aide de l'intelligence artificielle" width="800" height="500" loading="lazy">
-            <p class="card-tag">💼 Emploi</p>
-            <h3><a href="articles/rediger-cv-avec-ia.html">Rédiger un CV avec l'IA : le guide honnête</a></h3>
-            <p>Transformer les tâches en résultats, adapter le CV à chaque offre, préparer l'entretien — sans jamais mentir.</p>
-            <a class="card-link" href="articles/rediger-cv-avec-ia.html">Lire le guide →</a>
-          </article>
+    <!-- MARQUEE -->
+    <section class="mq">
+      <p class="mq-lab">Les outils que nous couvrons</p>
+      <div class="rel">
+        <div class="mq-fl l"></div>
+        <div class="mq-fl r"></div>
+        <div class="mq-tr">
+          <span class="mq-it"><span class="mq-dot"></span>ChatGPT</span>
+          <span class="mq-it"><span class="mq-dot"></span>Mistral Le Chat</span>
+          <span class="mq-it"><span class="mq-dot"></span>Gemini</span>
+          <span class="mq-it"><span class="mq-dot"></span>Claude</span>
+          <span class="mq-it"><span class="mq-dot"></span>DeepL</span>
+          <span class="mq-it"><span class="mq-dot"></span>Canva</span>
+          <span class="mq-it"><span class="mq-dot"></span>Microsoft Copilot</span>
+          <span class="mq-it"><span class="mq-dot"></span>Midjourney</span>
+          <span class="mq-it"><span class="mq-dot"></span>Leonardo AI</span>
+          <span class="mq-it"><span class="mq-dot"></span>Notion AI</span>
+          <span class="mq-it"><span class="mq-dot"></span>ChatGPT</span>
+          <span class="mq-it"><span class="mq-dot"></span>Mistral Le Chat</span>
+          <span class="mq-it"><span class="mq-dot"></span>Gemini</span>
+          <span class="mq-it"><span class="mq-dot"></span>Claude</span>
+          <span class="mq-it"><span class="mq-dot"></span>DeepL</span>
+          <span class="mq-it"><span class="mq-dot"></span>Canva</span>
+          <span class="mq-it"><span class="mq-dot"></span>Microsoft Copilot</span>
+          <span class="mq-it"><span class="mq-dot"></span>Midjourney</span>
+          <span class="mq-it"><span class="mq-dot"></span>Leonardo AI</span>
+          <span class="mq-it"><span class="mq-dot"></span>Notion AI</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== THÈMES ===== -->
-    <section id="themes" class="section section-alt">
-      <div class="container">
-        <h2>Nos thèmes</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>💰 Gagner de l'argent avec l'IA</h3>
-            <p>Méthodes réalistes pour générer un revenu en ligne grâce aux outils IA gratuits : freelancing, contenu, micro-services.</p>
-          </article>
-          <article class="card">
-            <h3>🏪 L'IA pour votre métier</h3>
-            <p>Commerçants, freelances, immobilier, étudiants : des usages concrets de l'IA adaptés à votre activité quotidienne.</p>
-          </article>
-          <article class="card">
-            <h3>🧰 Outils IA gratuits testés</h3>
-            <p>Comparatifs et tests honnêtes des meilleurs outils gratuits : ChatGPT, Mistral Le Chat, DeepL, générateurs d'images…</p>
-          </article>
+    <!-- ARTICLES -->
+    <section class="art-s" id="articles">
+      <div class="sep"></div>
+      <div class="container tc">
+        <div class="stag gll">📚 Derniers guides</div>
+        <h2 class="st">Apprenez l'IA <span class="at">pas à pas</span></h2>
+        <p class="sd">Des tutoriels concrets, testés et écrits en français simple. Pas de blabla, que du pratique.</p>
+
+        <div class="fil mt-40" id="fil">
+          <button class="fb act" data-cat="all" aria-pressed="true">Tous</button>
+          <button class="fb" aria-pressed="false" data-cat="Argent en ligne">💰 Argent</button>
+          <button class="fb" aria-pressed="false" data-cat="IA pour votre métier">🏪 Métier</button>
+          <button class="fb" aria-pressed="false" data-cat="Débuter">🚀 Débuter</button>
+          <button class="fb" aria-pressed="false" data-cat="Outils testés">🧰 Outils</button>
+          <button class="fb" aria-pressed="false" data-cat="Créer">🎨 Créer</button>
+          <button class="fb" aria-pressed="false" data-cat="Études">🎓 Études</button>
+          <button class="fb" aria-pressed="false" data-cat="Emploi">💼 Emploi</button>
+        </div>
+
+        <div class="art-g" id="ag">
+          <a href="articles/gagner-argent-outils-ia-gratuits.html" class="acard ch gb" data-cat="Argent en ligne">
+            <div class="ct g1"><span class="em">💰</span><div class="cr1"></div><div class="cr2"></div><span class="bn">Nouveau</span></div>
+            <div class="cb">
+              <span class="cc-t">💰 Argent en ligne</span>
+              <h3 class="c-tl">Gagner de l'argent en ligne avec les outils IA gratuits : 5 méthodes réalistes</h3>
+              <p class="c-ex">Rédaction, micro-services, création de contenu… les méthodes qui fonctionnent vraiment en 2026, sans investissement de départ.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/ia-petits-commerces.html" class="acard ch gb" data-cat="IA pour votre métier">
+            <div class="ct g2"><span class="em">🏪</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">🏪 IA pour votre métier</span>
+              <h3 class="c-tl">L'IA pour les petits commerces : 7 usages concrets et gratuits</h3>
+              <p class="c-ex">Répondre aux clients, créer vos publications, gérer votre stock d'idées : comment un petit commerce utilise l'IA sans budget.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/chatgpt-guide-debutant.html" class="acard ch gb" data-cat="Débuter">
+            <div class="ct g3"><span class="em">🚀</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">🚀 Débuter</span>
+              <h3 class="c-tl">ChatGPT gratuit en français : le guide du vrai débutant</h3>
+              <p class="c-ex">Créer un compte, écrire sa première demande, éviter les pièges : tout ce qu'il faut savoir pour bien démarrer avec l'IA.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/prompts-chatgpt-exemples.html" class="acard ch gb" data-cat="Débuter">
+            <div class="ct g4"><span class="em">✍️</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">✍️ Débuter</span>
+              <h3 class="c-tl">30 prompts ChatGPT prêts à copier</h3>
+              <p class="c-ex">Rédaction, travail, commerce, études, traduction : 30 formulations à copier-coller, plus la méthode pour écrire les vôtres.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/meilleurs-outils-ia-gratuits.html" class="acard ch gb" data-cat="Outils testés">
+            <div class="ct g5"><span class="em">🧰</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">🧰 Outils testés</span>
+              <h3 class="c-tl">Meilleurs outils IA gratuits en 2026 : le comparatif honnête</h3>
+              <p class="c-ex">ChatGPT, Mistral Le Chat, Gemini, Claude, DeepL, Canva : lequel choisir selon votre besoin réel, et les vraies limites du gratuit.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/creer-images-ia-gratuit.html" class="acard ch gb" data-cat="Créer">
+            <div class="ct g6"><span class="em">🎨</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">🎨 Créer</span>
+              <h3 class="c-tl">Créer des images avec l'IA gratuitement</h3>
+              <p class="c-ex">La recette d'une bonne description en 5 éléments, les erreurs qui gâchent tout, et ce qu'il faut savoir sur les droits d'utilisation.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/ia-pour-etudiants.html" class="acard ch gb" data-cat="Études">
+            <div class="ct g7"><span class="em">🎓</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">🎓 Études</span>
+              <h3 class="c-tl">L'IA pour les étudiants : réviser, résumer, rédiger</h3>
+              <p class="c-ex">Fiches de révision, interrogation active, plans de dissertation : l'IA comme répétiteur — sans tricher, et sans se mentir.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/ia-pour-instagram.html" class="acard ch gb" data-cat="IA pour votre métier">
+            <div class="ct g8"><span class="em">📸</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">📸 IA pour votre métier</span>
+              <h3 class="c-tl">L'IA pour Instagram : légendes, visuels et hashtags</h3>
+              <p class="c-ex">Écrire vos légendes, choisir vos hashtags, tenir un calendrier : faire vivre votre page sans y passer vos soirées.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
+          <a href="articles/rediger-cv-avec-ia.html" class="acard ch gb" data-cat="Emploi">
+            <div class="ct g9"><span class="em">💼</span><div class="cr1"></div><div class="cr2"></div></div>
+            <div class="cb">
+              <span class="cc-t">💼 Emploi</span>
+              <h3 class="c-tl">Rédiger un CV avec l'IA : le guide honnête</h3>
+              <p class="c-ex">Transformer les tâches en résultats, adapter le CV à chaque offre, préparer l'entretien — sans jamais mentir.</p>
+              <span class="c-lk">Lire le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== À PROPOS ===== -->
-    <section id="apropos" class="section">
-      <div class="container">
-        <h2>À propos de SoftHome DZ</h2>
-        <p>SoftHome DZ est un site francophone dédié à l'intelligence artificielle <strong>pratique</strong>. Notre mission : rendre les outils IA accessibles à tous — sans jargon technique, sans anglais obligatoire, et en privilégiant les outils <strong>gratuits</strong>.</p>
-        <p>Que vous soyez freelance, étudiant, commerçant ou simplement curieux, vous trouverez ici des guides pas à pas testés réellement, pensés pour le public francophone d'Algérie, du Maghreb, de France et d'ailleurs. Pas de promesses miracles : uniquement des méthodes concrètes qui font gagner du temps et, souvent, de l'argent.</p>
+    <!-- THEMES -->
+    <section class="th-s" id="themes">
+      <div class="sep"></div>
+      <div class="container tc">
+        <div class="stag gll">🎯 Nos thèmes</div>
+        <h2 class="st">Explorez par <span class="at">thématique</span></h2>
+        <p class="sd">Trouvez le contenu adapté à votre situation : freelance, étudiant, commerçant ou curieux.</p>
+
+        <div class="th-g mt-40 tl">
+          <div class="tc tg1 gb">
+            <div class="ti">💰</div>
+            <h3 class="tn fd">Gagner de l'argent avec l'IA</h3>
+            <p class="tdsc">Méthodes réalistes pour générer un revenu en ligne grâce aux outils IA gratuits : freelancing, contenu, micro-services.</p>
+            <div class="tb ag"></div>
+          </div>
+          <div class="tc tg2 gb">
+            <div class="ti">🏪</div>
+            <h3 class="tn fd">L'IA pour votre métier</h3>
+            <p class="tdsc">Commerçants, freelances, immobilier, étudiants : des usages concrets de l'IA adaptés à votre activité quotidienne.</p>
+            <div class="tb ag"></div>
+          </div>
+          <div class="tc tg3 gb">
+            <div class="ti">🧰</div>
+            <h3 class="tn fd">Outils IA gratuits testés</h3>
+            <p class="tdsc">Comparatifs et tests honnêtes des meilleurs outils gratuits : ChatGPT, Mistral Le Chat, DeepL, générateurs d'images…</p>
+            <div class="tb ag"></div>
+          </div>
+        </div>
       </div>
     </section>
-<nav aria-label="Navigation principale">
-  <a href="/#articles">Articles</a>
-  <a href="/#themes">Thèmes</a>
-  <a href="/#apropos">À propos</a>
-  <a href="/#contact">Contact</a>
-</nav>
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section section-alt">
+
+    <!-- A PROPOS -->
+    <section class="ab-s" id="apropos">
+      <div class="sep"></div>
       <div class="container">
-        <h2>Contact</h2>
-        <p>Une question, une suggestion d'article, un partenariat ?</p>
-        <p>Email : <a href="mailto:contact@softhomedz.com">contact@softhomedz.com</a></p>
+        <div class="ab-g">
+          <div class="ab-t">
+            <div class="stag gll">ℹ️ À propos</div>
+            <h2>L'IA accessible <span class="at">à tous</span></h2>
+            <p>SoftHome DZ est un site francophone dédié à l'intelligence artificielle <strong>pratique</strong>. Notre mission : rendre les outils IA accessibles à tous — sans jargon technique, sans anglais obligatoire, et en privilégiant les outils <strong>gratuits</strong>.</p>
+            <p class="sec">Que vous soyez freelance, étudiant, commerçant ou simplement curieux, vous trouverez ici des guides pas à pas testés réellement, pensés pour le public francophone d'Algérie, du Maghreb, de France et d'ailleurs. Pas de promesses miracles : uniquement des méthodes concrètes qui font gagner du temps et, souvent, de l'argent.</p>
+          </div>
+          <div class="fg">
+            <div class="fc gll">
+              <div class="fi fg1">❤️</div>
+              <div class="fn fd">Sans jargon</div>
+              <p class="fds">Tout est expliqué en français simple, pas besoin d'être développeur.</p>
+            </div>
+            <div class="fc gll">
+              <div class="fi fg2">⚡</div>
+              <div class="fn fd">100% gratuit</div>
+              <p class="fds">On privilégie les outils gratuits, pas de dépenses cachées.</p>
+            </div>
+            <div class="fc gll">
+              <div class="fi fg3">🌍</div>
+              <div class="fn fd">Francophone</div>
+              <p class="fds">Pour l'Algérie, le Maghreb, la France et tous les francophones.</p>
+            </div>
+            <div class="fc gll">
+              <div class="fi fg4">✅</div>
+              <div class="fn fd">Testé réellement</div>
+              <p class="fds">Chaque guide est vérifié avec de vrais exemples concrets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="co-s" id="contact">
+      <div class="sep"></div>
+      <div class="container tc">
+        <div class="stag gll">✉️ Contact</div>
+        <h2 class="st">Une question ? <span class="at">Écrivez-nous</span></h2>
+        <p class="sd">Nous répondons à toutes les questions sur l'IA en français.</p>
+
+        <form class="cf gll mt-40 tl" id="cf">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+          <div class="fr">
+            <div class="fg2l">
+              <label for="name">Nom</label>
+              <input id="name" name="name" required autocomplete="name" placeholder="Votre nom">
+            </div>
+            <div class="fg2l">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="votre@email.com">
+            </div>
+          </div>
+          <div class="fg2l mb-19">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5" placeholder="Votre message..."></textarea>
+          </div>
+          <button type="submit" class="btn-sub bs ag">✉️ Envoyer le message</button>
+          <div id="ff"></div>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- ===== PIED DE PAGE ===== -->
-  <footer class="site-footer">
+  <!-- FOOTER -->
+  <footer class="ft">
     <div class="container">
-      <p>&copy; 2026 SoftHome DZ — softhomedz.com. Tous droits réservés.</p>
-      <p class="footer-links"><a href="#articles">Articles</a> · <a href="#apropos">À propos</a> · <a href="#contact">Contact</a> · <a href="/confidentialite.html">Confidentialité</a> · <a href="https://www.facebook.com/softhomedz" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/1001softhomedz" target="_blank" rel="noopener">Instagram</a></p>
+      <div class="ft-g">
+        <div>
+          <a href="/" class="ft-l">
+            <svg viewBox="0 0 64 64"><defs><linearGradient id="lf" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lf)"/><path d="M32 12.5l5.3 12 12 5.3-12 5.3-5.3 12-5.3-12-12-5.3 12-5.3z" fill="#fff"/><circle cx="46" cy="45" r="3.2" fill="#fff" opacity=".85"/></svg>
+            <span class="logo-t fs-1">Soft<span class="at">Home</span><span class="logo-dz">DZ</span></span>
+          </a>
+          <p class="ft-d">L'IA pratique en français.<br>Guides, tutoriels et outils gratuits.</p>
+        </div>
+        <div class="ft-cl">
+          <div class="ft-c">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#articles">Guides</a></li>
+              <li><a href="#themes">Thèmes</a></li>
+              <li><a href="#apropos">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="ft-c">
+            <h4>Ressources</h4>
+            <ul>
+              <li><a href="https://ia.softhomedz.com" target="_blank" rel="noopener noreferrer">Guide IA</a></li>
+              <li><a href="https://softhomedz.com" target="_blank" rel="noopener noreferrer">Site principal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="ft-c"><h4>Restez informé</h4></div>
+          <p class="ft-d mb-13">Suivez nos derniers guides IA directement sur le site.</p>
+          <a href="#articles" class="ft-cta">Voir les guides →</a>
+        </div>
+      </div>
+      <div class="ft-b">
+        <p>© 2026 SoftHome DZ. Tous droits réservés.</p>
+        <p>Fait avec ❤️ pour la communauté francophone</p>
+      </div>
     </div>
   </footer>
 
+  <script>
+    // Header scroll
+    var h=document.getElementById('hdr');
+    window.addEventListener('scroll',function(){h.classList.toggle('sc',window.scrollY>40)},{passive:true});
+
+    // Mobile menu
+    var t=document.getElementById('mt'),m=document.getElementById('mn');
+    t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+
+    // Filters
+    var fb=document.querySelectorAll('.fb'),cards=document.querySelectorAll('.acard');
+    fb.forEach(function(b){
+      b.addEventListener('click',function(){
+        fb.forEach(function(x){x.classList.remove('act');x.setAttribute('aria-pressed','false')});
+        b.classList.add('act');b.setAttribute('aria-pressed','true');
+        var c=b.dataset.cat;
+        cards.forEach(function(card){
+          card.style.display=(c==='all'||card.dataset.cat===c)?'':'none';
+        });
+      });
+    });
+
+    // Contact form — envoi RÉEL via Web3Forms (clé configurée ✔)
+    // Les messages arrivent dans la boîte e-mail liée à la clé d'accès.
+    // Fallback automatique : si la clé est absente, ouverture de l'e-mail du visiteur.
+    var f=document.getElementById('cf'),ff=document.getElementById('ff');
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var ACCESS_KEY='bf545073-616e-4502-8bcd-615b18b53d58';
+      var btn=f.querySelector('button[type="submit"]');
+      var btnText=btn.textContent;
+      btn.disabled=true;btn.textContent='Envoi en cours…';
+      if(ACCESS_KEY==='VOTRE_CLE_WEB3FORMS'){
+        var nom=encodeURIComponent(document.getElementById('name').value||'');
+        var msg=encodeURIComponent(document.getElementById('message').value||'');
+        window.location.href='mailto:contact@softhomedz.com?subject='+encodeURIComponent('Message depuis softhomedz.com')+'&body='+encodeURIComponent('Nom : ')+nom+encodeURIComponent('\n\n')+msg;
+        ff.innerHTML='<div class="fm ok">Votre messagerie s\'ouvre pour envoyer le message. Sinon, écrivez-nous à contact@softhomedz.com.</div>';
+        btn.disabled=false;btn.textContent=btnText;
+        setTimeout(function(){ff.innerHTML=''},8000);
+        return;
+      }
+      var body={access_key:ACCESS_KEY,from_name:document.getElementById('name').value,email:document.getElementById('email').value,message:document.getElementById('message').value,subject:'Nouveau message depuis softhomedz.com',botcheck:''};
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+        .then(function(r){return r.json()})
+        .then(function(d){
+          if(d&&d.success){ff.innerHTML='<div class="fm ok">✅ Message envoyé avec succès ! Nous vous répondrons rapidement.</div>';f.reset();}
+          else{ff.innerHTML='<div class="fm err">⚠️ Envoi impossible pour le moment. Écrivez-nous directement à contact@softhomedz.com.</div>';}
+          btn.disabled=false;btn.textContent=btnText;
+          setTimeout(function(){ff.innerHTML=''},8000);
+        })
+        .catch(function(){
+          ff.innerHTML='<div class="fm err">⚠️ Erreur réseau. Écrivez-nous directement à contact@softhomedz.com.</div>';
+          btn.disabled=false;btn.textContent=btnText;
+          setTimeout(function(){ff.innerHTML=''},8000);
+        });
+    });
+  </script>
 </body>
 </html>

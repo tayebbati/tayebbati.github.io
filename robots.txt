@@ -1,4 +1,6 @@
 # robots.txt — softhomedz.com
+# (Cloudflare ajoute automatiquement sa section « Content-Signals » en haut.)
+
 User-agent: *
 Allow: /
 
