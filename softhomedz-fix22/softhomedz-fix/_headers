@@ -1,0 +1,31 @@
+# ═══════════════════════════════════════════════════════════════
+# _headers — Cloudflare Pages (à placer à la racine du site)
+# Correctifs appliqués (audit 2026-08-13) :
+#   ✔ style-src : ajout de https://fonts.googleapis.com (Google Fonts)
+#   ✔ font-src  : NOUVEAU — autorise les fichiers de polices gstatic
+#   ✔ connect-src : ajout de https://api.web3forms.com (formulaire de contact)
+#   ✔ HSTS ajouté (manquant avant)
+#   NOTE : le CSS du site est maintenant EXTERNE (home.css / style.css),
+#          donc PAS besoin de 'unsafe-inline' pour style-src.
+# ═══════════════════════════════════════════════════════════════
+
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://www.google.dz https://stats.g.doubleclick.net; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://www.google.com https://stats.g.doubleclick.net https://api.web3forms.com; object-src 'none'; base-uri 'self'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Cache long pour les feuilles de style statiques
+/style.css
+  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
+
+/home.css
+  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
+
+/404.css
+  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
+
+/og-image.jpg
+  Cache-Control: public, max-age=604800

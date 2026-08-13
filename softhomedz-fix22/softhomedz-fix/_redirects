@@ -1,0 +1,8 @@
+# ═══════════════════════════════════════════════════════════════
+# _redirects — Cloudflare Pages (à placer à la racine du site)
+# Canonique du site : https://softhomedz.com (sans www)
+# — cohérent avec le sitemap.xml et les balises canonical existantes.
+# ═══════════════════════════════════════════════════════════════
+
+# Redirection www -> non-www (301) pour éliminer le contenu dupliqué
+https://www.softhomedz.com/*  https://softhomedz.com/:splat  301
