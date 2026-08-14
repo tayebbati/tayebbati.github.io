@@ -1,41 +1,52 @@
-(() => {
-  const form = document.querySelector('#generator-form');
-  const button = document.querySelector('#generate');
-  const status = document.querySelector('#status');
-  const resultCard = document.querySelector('#result-card');
-  const result = document.querySelector('#result');
-  const copy = document.querySelector('#copy');
-  if (!form) return;
-
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-    button.disabled = true;
-    status.textContent = 'Génération en cours…';
-    resultCard.hidden = true;
-    try {
-      const payload = Object.fromEntries(new FormData(form).entries());
-      const response = await fetch('/api/generer-contenu', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || 'La génération est temporairement indisponible.');
-      result.textContent = data.text;
-      result.style.whiteSpace = 'pre-wrap';
-      resultCard.hidden = false;
-      status.textContent = `${data.remaining} génération(s) restante(s) aujourd’hui.`;
-    } catch (error) {
-      status.textContent = `⚠️ ${error.message}`;
-    } finally {
-      button.disabled = false;
-    }
-  });
-
-  copy.addEventListener('click', async () => {
-    await navigator.clipboard.writeText(result.textContent);
-    copy.textContent = '✅ Copié';
-    setTimeout(() => { copy.textContent = 'Copier le contenu'; }, 1800);
-  });
-})();
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Générateur de publications IA gratuit | SoftHome DZ</title>
+  <meta name="description" content="Créez gratuitement des publications Facebook, Instagram et LinkedIn avec l'intelligence artificielle. 3 générations gratuites par jour.">
+  <link rel="stylesheet" href="../style.css?v=20260814">
+  <link rel="icon" href="../favicon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo"><img class="logo-mark" src="../logo.svg" alt="" width="34" height="30">SoftHome<span>DZ</span></a>
+      <nav aria-label="Navigation principale"><a href="/">Accueil</a><a href="/#articles">Guides</a><a href="/confidentialite.html">Confidentialité</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">✨ Outil gratuit SoftHomeDZ</div>
+        <h1>Générez vos publications avec l’IA</h1>
+        <p class="hero-sub">Créez un contenu prêt à publier pour Facebook, Instagram ou LinkedIn. <strong>3 générations gratuites par jour.</strong></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container container-narrow">
+        <form id="generator-form" class="card" novalidate>
+          <div class="grid">
+            <label>Plateforme<select name="platform" required><option value="Facebook">Facebook</option><option value="Instagram">Instagram</option><option value="LinkedIn">LinkedIn</option></select></label>
+            <label>Langue<select name="language" required><option value="français">Français</option><option value="arabe">Arabe</option><option value="français et arabe">Français et arabe</option></select></label>
+            <label>Type de publication<select name="type" required><option>Conseil pratique</option><option>Promotion d’un produit</option><option>Présentation d’un service</option><option>Annonce</option><option>Témoignage client</option><option>Éducation</option></select></label>
+            <label>Ton<select name="tone" required><option>Simple et naturel</option><option>Professionnel</option><option>Dynamique</option><option>Commercial mais humain</option></select></label>
+          </div>
+          <label>Sujet ou produit<textarea name="topic" rows="4" required minlength="5" maxlength="1000" placeholder="Exemple : une formation No-Code pour les petites entreprises à Alger"></textarea></label>
+          <label>Public cible<textarea name="audience" rows="2" maxlength="400" placeholder="Exemple : freelances et petites PME algériennes"></textarea></label>
+          <button class="btn" type="submit" id="generate">✨ Générer la publication</button>
+          <p id="status" class="small" role="status" aria-live="polite">3 générations gratuites par jour.</p>
+        </form>
+        <section id="result-card" class="card" hidden aria-live="polite">
+          <span class="card-tag">Résultat généré</span>
+          <div id="result"></div>
+          <button class="btn" id="copy" type="button">Copier le contenu</button>
+        </section>
+        <p class="small">Ne partagez pas de données personnelles ou confidentielles. Vérifiez le contenu avant publication.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 SoftHome DZ — Guides IA gratuits en français.</p></div></footer>
+  <script src="../js/generateur-contenu.js?v=20260814" defer></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2ac13a53d3f3351',t:'MTc4NjY2OTc5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
