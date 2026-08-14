@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "softhomedz",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-14",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "RATE_LIMIT",
+      "id": "SOFTHOMEDZ_RATE_LIMIT"
+    }
+  ]
+}
