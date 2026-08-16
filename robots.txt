@@ -1,5 +1,4 @@
-# robots.txt — softhomedz.com
 User-agent: *
 Allow: /
-
+Disallow: /worker.js
 Sitemap: https://softhomedz.com/sitemap.xml
